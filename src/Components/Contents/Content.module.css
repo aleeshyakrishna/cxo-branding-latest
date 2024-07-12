@@ -1,0 +1,40 @@
+
+.buttonContent{
+    background-color: black;
+}
+.contentMain{
+    height: 100vh;
+    /* background-color: black; */
+    display: flex;
+}
+.contentMain h1{
+ color: white;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.contentProblems img{
+    height: 50px;
+}
+.contentProblems{
+    width: 50%;
+    margin-top: 222px;
+    padding-left: 150px;
+}
+.contentProblems2{
+    width: 50%;
+    /* background-color: aquamarine; */
+    padding-right: 150px;
+
+}
+.contentProblems2 p{
+    margin-top: 30%;
+    font-size: xx-large;
+    font-family: cursive;
+    color: white;
+}
+.buttonContent button{
+    color: black;
+    width: 49%;
+    height: 41px;
+    background-color: blanchedalmond;
+    
+}
