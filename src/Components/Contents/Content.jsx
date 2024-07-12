@@ -6,7 +6,7 @@ function Content() {
     return (
         <div className={styles.buttonContent}>
             
-           
+           <h1>Meet our CXOs</h1>
 
         <div className={styles.contentMain}>
         
