@@ -4,6 +4,7 @@ import BecomeNav from '../../Components/BecomeNav/BecomeNav.jsx'
 import Header from '../../Components/Header/Header.jsx'
 import Content from '../../Components/Contents/Content.jsx'
 import Services from '../../Components/Services/Services.jsx'
+import WhoWeAre from '../../Components/WhoWeAre/WhoWeAre.jsx'
 import Footer from '../../Components/Footer/Footer.jsx'
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
               {/* <br/> */}
               <Content/>
               <Services/>
+              <WhoWeAre/>
               <Footer/>
     </>
 

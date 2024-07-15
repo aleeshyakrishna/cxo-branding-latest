@@ -17,7 +17,7 @@ const Header = () => {
           <Link to='our'> <button >Looking for job?</button> </Link> <br />
           <br />
 
-          <Link to='branding'><button >Start something on Myown</button></Link>
+          <Link to='branding'><button >Start something on My Own!</button></Link>
         </div>
         {/* <div
           className={styles.header_txt}

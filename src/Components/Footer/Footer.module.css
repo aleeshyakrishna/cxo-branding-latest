@@ -1,9 +1,21 @@
 .footerContainer{
     /* background-color: #f1c40f; */
-    background-color: #f4bb44!important;
+    background-color: black!important;
     height: 260px;
     align-items: center;
 
 }
-.footerContainer h1{
+.footerContainer p{
+    /* align-items: center; */
+    margin-left: 20px;
+    color: white;
+}
+.logoImg{
+    width: 100px;
+    height: 100px;
+}
+.imgDivLogo{
+    background-color: white;
+    /* align-items: center;
+    justify-content: space-between; */
 }
