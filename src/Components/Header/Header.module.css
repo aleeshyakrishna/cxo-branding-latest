@@ -5,7 +5,7 @@
 } */
 
 .header_main {
-    background-image: url("./../../Images/banner1-16-04-2024.webp");
+    background-image: url("./../../Images/GettyImages-1186079153.png");
     height: 74vh;
     width: 100%;
     background-color: hsl(0, 0%, 96%);
@@ -20,7 +20,7 @@
     /* position: absolute; */
 }
 .buttonDivs{
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
 }
 .buttonDivs button{
     color: white;
