@@ -5,8 +5,8 @@
 }
 
 .header_main {
-    background-image: url("./../../Images//professional3.jfif");
-    height: 95vh;
+    background-image: url("./../../Images/banner1-16-04-2024.webp");
+    height: 74vh;
     width: 100%;
     background-color: hsl(0, 0%, 96%);
     z-index: -3;
@@ -15,22 +15,28 @@
     /* opacity: 0.5; */
     /* align-content: space-between; */
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     /* position: absolute; */
 }
-
+.buttonDivs{
+    /* margin-bottom: 100px; */
+}
 .buttonDivs button{
-    color: black;
+    color: white;
     font-size: xx-large;
     font-weight: bold;
     border-radius: 1rem;
     /* width: 100%; */
     /* opacity: 1; */
     box-shadow: black;
+    margin-left: 90px;
+    
+    background-color: black;
 }
 .buttonDivs button:hover{
-    background-color: #f1c40f;
+    background-color: #f4bb44;
+    color: black;
 }
 .yellow_bg {
     background-color: var(--yellow);

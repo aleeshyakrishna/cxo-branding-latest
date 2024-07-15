@@ -5,7 +5,7 @@ import CXO from './../../Images/professional3.jfif'
 function Content() {
     return (
         <div className={styles.buttonContent}>
-            
+            <br/> 
            <h1>Meet our CXOs</h1>
 
         <div className={styles.contentMain}>

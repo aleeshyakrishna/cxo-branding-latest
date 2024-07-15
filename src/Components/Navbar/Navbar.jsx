@@ -6,8 +6,10 @@ function Navbar() {
     <div>
 
       <div className={styles.mainHead}>
-       
+       <div style={{backgroundColor:'whitesmoke'}}>
+
         <img src={logo} alt="" />
+       </div>
         
         <ul className={styles.list}>
           <li >Home</li>
@@ -15,12 +17,13 @@ function Navbar() {
           {/* <li>Message</li> */}
           <li >About</li>
           <li >Contact</li>
+          <li>signup</li>
         </ul>
 
-        <div className={styles.member}>
-          <p>login</p>
+        {/* <div className={styles.member}>
+          
           <p>signup</p>
-        </div>
+        </div> */}
       </div>
     </div>
 

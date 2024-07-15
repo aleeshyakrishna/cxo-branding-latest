@@ -40,14 +40,14 @@
 
 }
 .contentProblems2 p{
-    font-size: xx-large;
-    font-family: cursive;
+    /* font-size: xx-large;
+    font-family: h; */
     color: white;
 }
 .buttonContent button{
     color: black;
     width: 49%;
     height: 41px;
-    background-color: blanchedalmond;
+    background-color: #f4bb44;
     
 }
