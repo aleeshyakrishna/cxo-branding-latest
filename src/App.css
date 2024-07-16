@@ -1,0 +1,30 @@
+/* Define Futura Bold Italic Font */
+@font-face {
+    font-family: 'Futura';
+    src: url('../src/assets/fonts/futuraNew/Futura\ Medium\ Italic/Futura Medium Italic.otf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /* Define Futura Book Italic Font */
+  @font-face {
+    font-family: 'Futura Book';
+    src: url('../src/assets/fonts/futuraNew/Futura\ Medium\ Italic/Futura Medium Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* Apply Futura font for specific classes */
+  .futuraBoldItalic {
+    font-family: 'Futura', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .futuraBookItalic {
+    font-family: 'Futura Book', sans-serif;
+    font-style: italic;
+  }
+ *{
+    font-family: 'Futura';
+ }

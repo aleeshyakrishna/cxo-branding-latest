@@ -14,9 +14,9 @@
 .Service h1{
     text-align: center;
     color: white;
-    padding-top: 40px;
-    font-size: 30px;
-    font-family: "Teko", sans-serif;
+    /* padding-top: 40px; */
+    font-size: 2.5rem;
+    /* font-family: "Teko", sans-serif; */
     background-color: black;
 }
 .Service{

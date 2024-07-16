@@ -6,7 +6,7 @@ const WhoWeAre = () => {
     <div className={styles.buttonContent}>
       
       <h1>Who We Are</h1>
-
+      <br/><br/>
       <div className={styles.contentMain}>
 
 
@@ -24,13 +24,11 @@ const WhoWeAre = () => {
 
         </div>
         <div className={styles.contentProblems2}>
-          <p>Just like you, we have a dream too. At Mentoring India, we dream to
+          <p>Just like you, we have a dream too. At CXO branding, we dream to
              provide young talent like you, the guidance that you deserve to make your
               dreams come true. Our regular interaction with you, will help us build a
                strong bond where we match you with mentors who are pursuing the career that 
-               you wish to be one day. This opportunity gives you the practical guidance which
-                in course of time maximizes your strengths and brings about significant 
-            changes for your own betterment and the betterment of the society as well.</p>
+               you wish to be one day. </p>
           <br />
           <button>learn more</button>
 

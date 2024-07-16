@@ -18,12 +18,15 @@
   
   .card_title {
     font-size: 24px;
+    color: #f4bb44;
     margin-bottom: 10px;
+    
   }
   
   .card_description {
     font-size: 16px;
     margin-bottom: 20px;
+    color: #878282;
   }
   
   .card_link {

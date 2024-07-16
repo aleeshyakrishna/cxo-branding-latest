@@ -3,7 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 } */
-
+/* Define Futura Bold Italic Font */
+@font-face {
+    font-family: 'Futura';
+    src: url('../assets/fonts/futura-bold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /* Define Futura Book Italic Font */
+  @font-face {
+    font-family: 'Futura Book';
+    src: url('../../assets/fonts/futura/Futura\ Bold\ Italic\ font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* Apply Futura font for specific classes */
+  .futuraBoldItalic {
+    font-family: 'Futura', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .futuraBookItalic {
+    font-family: 'Futura Book', sans-serif;
+    font-style: italic;
+  }
 .header_main {
     background-image: url("./../../Images/GettyImages-1186079153.png");
     height: 74vh;
@@ -20,18 +46,22 @@
     /* position: absolute; */
 }
 .buttonDivs{
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 .buttonDivs button{
     color: white;
     font-size: xx-large;
+    height: 38%;
     font-weight: bold;
-    border-radius: 1rem;
-    /* width: 100%; */
-    /* opacity: 1; */
+    border-radius: 5rem;
+    margin-top: 5.7%;
+    width: 47%;
+    /* gap: 2rem; */
+    opacity: 0.5;
     box-shadow: black;
-    margin-left: 90px;
-    
+    margin-left: 60px;
     background-color: black;
 }
 .buttonDivs button:hover{
@@ -75,13 +105,13 @@
 .header_txt h1 {
     color: var(--yellow);
     font-size: 60px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Futura', sans-serif;
 }
 
 .header_txt span {
     color: var(--black);
     font-size: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Futura', sans-serif;
 }
 
 .header_image{
@@ -99,7 +129,7 @@
     color: var(--black);
     font-size: 16px;
     margin-top: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Futura', sans-serif;
 }
 .header_txt h1{
     color: #f1c40f;
@@ -120,7 +150,7 @@
 .header_box li {
     list-style: none;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Futura', sans-serif;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -214,7 +244,7 @@
         font-size: 40px;
         z-index: -3;
         margin-left: -10px;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Futura', sans-serif;
     }
 
     .header_txt span {
@@ -222,7 +252,7 @@
         font-size: 30px;
         margin-left: -100px;
         z-index: 1;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Futura', sans-serif;
     }
 
     .header_image img::before {
@@ -274,7 +304,7 @@
         padding-top: 64px;
         list-style: none;
         font-size: 16px;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Futura', sans-serif;
         cursor: pointer;
     }
 

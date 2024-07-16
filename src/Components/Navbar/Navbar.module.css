@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    color: white;
+    color: black;
+    /* opacity: 0.5; */
 }
 .mainHead img{
     width: 60px;
@@ -21,6 +22,7 @@
 }
 .list li {
     text-decoration: none; /* Remove underlines */
+    cursor: pointer;
 }
 
 .member{

@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import styles from './Navbar.module.css'
 import logo from "./NavbarImages/logo.png"
 function Navbar() {
+  const navigate = useNavigate()
   return (
     <div>
 
@@ -16,7 +18,7 @@ function Navbar() {
           <li >Jobs</li>
           {/* <li>Message</li> */}
           <li >About</li>
-          <li >Contact</li>
+          <li  onClick={()=>navigate('/contact')}>Contact</li>
           <li>signup</li>
         </ul>
 
