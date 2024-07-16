@@ -30,7 +30,7 @@ function Content() {
                     competitive corporate landscape, her journey isn't just about
                     professional accomplishments; it's about crafting a narrative that
                     defines her brand."</p>
-                    {/* <br/> */}
+                    <br/>
                     <button>learn more</button>
 
 

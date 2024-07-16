@@ -30,3 +30,17 @@
     display: flex;
     gap: 5em;
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .mainHead{
+        background-color: #f4bb44!important;
+        width: 100%;
+        height:70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: black;
+        /* opacity: 0.5; */
+    }
+}

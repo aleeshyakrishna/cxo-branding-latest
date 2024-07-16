@@ -1,16 +1,14 @@
-
-  
-.buttonContent{
+/* General Styles */
+.buttonContent {
     background-color: black;
-   text-align: center;
-   color: white;
-   /* padding-top: 30px; */
-   font-size: 30px;
-   font-optical-sizing: auto;
-  font-style: normal;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-.contentMain{
+.contentMain {
     height: 100vh;
     background-color: black;
     display: flex;
@@ -19,48 +17,97 @@
     gap: 2rem;
 }
 
-.adaptationToMobile_yt_video{
+.adaptationToMobile_yt_video {
     width: 100%;
     height: 270px;
     border-radius: 20px;
     background-color: aliceblue;
 }
 
-.contentMain h1{
- color: white;
+.contentMain h1 {
+    color: white;
 }
 
-.contentProblems img{
+.contentProblems img {
     height: 50px;
 }
 
-.contentProblems{
+.contentProblems {
     width: 32%;
-
 }
 
-.contentProblems2{
+.contentProblems2 {
     width: 50%;
-
-
 }
 
-.contentProblems2 p{
-    /* font-size: xx-large;
-    font-family: h; */
+.contentProblems2 p {
     color: #878282;
 }
 
-.buttonContent button{
+.buttonContent button {
     color: black;
     width: 49%;
     height: 50px;
     border-radius: 3rem;
     background-color: #f4bb44;
-    /* opacity: 0.5; */
-    
 }
-.buttonContent button:hover{
+
+.buttonContent button:hover {
     background-color: #f4bb44;
     opacity: 0.5;
+}
+
+/* Responsive Styles */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .contentProblems,
+    .contentProblems2 {
+        width: 100%;
+    }
+    
+    .contentMain {
+        flex-direction: column;
+        height: auto; /* Adjust height for better layout on small screens */
+        gap: 1rem;
+    }
+    
+    .adaptationToMobile_yt_video {
+        height: 200px; /* Adjust video height for tablets */
+    }
+
+    .buttonContent {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .buttonContent button {
+        width: 100%; /* Make button full-width on tablets */
+        height: 40px; /* Adjust height for better fit */
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .contentMain {
+        padding: 0 1rem; /* Add padding for mobile devices */
+    }
+    
+    .contentProblems,
+    .contentProblems2 {
+        width: 100%;
+        margin-bottom: 1rem; /* Add margin for better spacing on mobile */
+    }
+    
+    .adaptationToMobile_yt_video {
+        height: 150px; /* Further adjust video height for mobile */
+    }
+    
+    .buttonContent {
+        font-size: 20px; /* Further adjust font size for mobile */
+    }
+
+    .buttonContent button {
+        width: 100%; /* Full width for buttons on mobile */
+        height: 35px; /* Adjust height for mobile screens */
+    }
 }
