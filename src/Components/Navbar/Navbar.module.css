@@ -56,6 +56,7 @@
       left: -100%; /* Initially hidden off-screen */
       background-color: white;
       top: 70px;
+      z-index: 3;
     }
   }
   
