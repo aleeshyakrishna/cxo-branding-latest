@@ -14,10 +14,10 @@ const Header = () => {
         </div>
         <div className={styles.buttonDivs}>
 
-          <Link to='our'> <button >Looking for job?</button> </Link> 
-          <br />
+          <Link> <button >Looking for job?</button> </Link> 
+          {/* <br /> */}
 
-          <Link to='branding'><button >Start something on My Own!</button></Link>
+          <Link><button >Start something on My Own!</button></Link>
         </div>
         {/* <div
           className={styles.header_txt}

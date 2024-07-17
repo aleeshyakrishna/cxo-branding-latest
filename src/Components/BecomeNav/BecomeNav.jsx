@@ -19,7 +19,7 @@ function BecomeNav() {
                 <button type="button" className="btn btn-warning">Business Startup Ideas</button>
                 <button type="button" className="btn btn-info">Podcasts for CXOs</button>
                 <button type="button" className="btn btn-light">Find an Investor</button>
-                {/* <button type="button" className="btn btn-dark">CXOMagazine</button> */}
+                <button type="button" className="btn btn-dark">Magazines</button>
 
                 {/* <div className={styles.marquee}>
                     <div className={styles.marqueeInner}>
