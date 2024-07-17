@@ -6,23 +6,23 @@ const Testimonals = () => {
     const testimonials = [
         {
             name: 'John Doe',
-            title: 'CEO , CAWLI WIRELESS',
+            title: 'Confidential: Group Head – Marketing & Product Planning | Consumer Durables.',
             image: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp',
-            quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit doloremque.',
+            quote: '“My experience with Mahesh of CXO Branding has exceeded my very high expectations. I appreciate the attention to detail; the ability to profile my career & compile my past and current career experiences into a wonderful summary & biography. I would highly recommend him to anyone looking for these types of services”.',
             rating: 4,
         },
         {
             name: 'Maria Kate',
-            title: 'CEO , ACUTE',
+            title: ' Confidential: IT Sales & Project Management Professional; Singapore.',
             image: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp',
-            quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit doloremque.',
+            quote: '“It was a pleasure working with the people at CXO Branding. I am extremely happy with their work. I am sure they will have many success stories in the years ahead!” ',
             rating: 5,
         },
         {
             name: 'Anna Deynah',
-            title: 'CEO , BUILDIFY',
+            title: 'Confidential: Group CIO with experience in Telecom , Healthcare & Logistics,',
             image: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp',
-            quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit doloremque.',
+            quote: '“Mahesh’s interactive skills and patience helps in creating individual brand value by probing and restructuring resume in unbelievable way”.',
             rating: 4,
         },
     ];
