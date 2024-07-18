@@ -21,6 +21,7 @@ function BecomeNav() {
                 <button type="button" className="btn btn-light">Find an Investor</button>
                 <button type="button" className="btn btn-dark">Magazines</button>
                 <button type="button" className="btn btn-secondary">Become a Freelancer</button>
+                <button type="button" className="btn btn-danger">Join our Meetup-group</button>
 
 
 
