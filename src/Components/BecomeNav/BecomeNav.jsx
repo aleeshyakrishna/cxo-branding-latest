@@ -13,13 +13,16 @@ function BecomeNav() {
         <div>
             <div className={styles.mainBecom}>
                 <button type="button" className="btn btn-primary">Become a Mentor</button>
-                <button type="button" className="btn btn-secondary">Become an Industry Mentor</button>
+                {/* <button type="button" className="btn btn-secondary">Become an Industry Mentor</button> */}
                 <button type="button" className="btn btn-success">Become an Investor</button>
                 <button type="button" className="btn btn-danger">Community of CEOs</button>
                 <button type="button" className="btn btn-warning">Business Startup Ideas</button>
                 <button type="button" className="btn btn-info">Podcasts for CXOs</button>
                 <button type="button" className="btn btn-light">Find an Investor</button>
                 <button type="button" className="btn btn-dark">Magazines</button>
+                <button type="button" className="btn btn-secondary">Become a Freelancer</button>
+
+
 
                 {/* <div className={styles.marquee}>
                     <div className={styles.marqueeInner}>
