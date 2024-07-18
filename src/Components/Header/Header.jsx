@@ -14,10 +14,16 @@ const Header = () => {
         </div>
         <div className={styles.buttonDivs}>
 
-          <Link> <button >Looking for job?</button> </Link> 
+          <div className={styles.buttonDivsContainer}>
+            <h2>Crafting CXO Success Stories !</h2>
+            <div>
+            <br/>
+            <p>Empowering CXOs to Shine through Personal Branding & Career Advancement Services !!</p>
+            </div>
+            </div> 
           {/* <br /> */}
 
-          <Link><button >Start something on My Own!</button></Link>
+          {/* <Link><button >Start something on My Own!</button></Link> */}
         </div>
         {/* <div
           className={styles.header_txt}

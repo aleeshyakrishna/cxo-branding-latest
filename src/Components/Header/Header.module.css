@@ -25,11 +25,11 @@
 .buttonDivs button{
     color: white;
     font-size: xx-large;
-    height: 38%;
+    height: 268%;
     font-weight: bold;
     border-radius: 5rem;
     margin-top: 5.7%;
-    width: 47%;
+    width: 90%;
     /* gap: 2rem; */
     opacity: 0.5;
     box-shadow: black;
@@ -42,7 +42,33 @@
     color: black;
 }
 
+.buttonDivsContainer{
+    color: white;
+    font-size: xx-large;
+    height: 100%;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-top: 5.7%;
+    width: 50%;
+    /* gap: 2rem; */
+    opacity: 0.4;
+    /* box-shadow: black; */
+    margin-left: 50px;
+    background-color: black;
+    /* justify-content: space-around; */
+}
+.buttonDivsContainer h2{
+    padding-top: 10%;
+    padding-left: 19%;
+    /* color: black;
+    z-index: 3; */
+}
 
+.buttonDivsContainer p{
+    padding-top: 0%;
+    padding-left: 12%;
+    /* padding-left: 5%; */
+}
 
 
 
@@ -83,6 +109,21 @@
         background-color: black;
     }
     
+.buttonDivsContainer{
+    color: white;
+    font-size: xx-large;
+    height: 100%;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-top: 5.7%;
+    width: 100%;
+    /* gap: 2rem; */
+    opacity: 0.4;
+    /* box-shadow: black; */
+    /* margin-left: 50px; */
+    background-color: black;
+    /* justify-content: space-around; */
+}
 }
 
 /* Tablet Query */
