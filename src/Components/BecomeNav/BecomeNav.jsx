@@ -17,17 +17,17 @@ function BecomeNav() {
  Business Startup Ideas
 </button>
 
-            {/* <button type="button" className="btn btn-success">
-                Start Something on Your Own?
-            </button> */}
-            <button type="button" className="btn btn-danger">
-                Community of CEOs
+            <button type="button" className="btn btn-success">
+                Community for CXOs
             </button>
+            {/* <button type="button" className="btn btn-danger">
+                Community of CEOs
+            </button> */}
             {/* <button type="button" className="btn btn-warning">
             Looking for a Job?
             </button> */}
             <button type="button" className="btn btn-info">
-                Podcasts for CXOs
+                Join Our MeetUp
             </button>
             <button type="button" className="btn btn-danger">
                 Join our Meetup-group
@@ -38,18 +38,33 @@ function BecomeNav() {
             <button type="button" className="btn btn-light">
                 Become a Mentor
             </button>
-            <button type="button" className="btn btn-dark">
+            <button type="button" className="btn btn-danger">
+                Find a Mentor
+            </button>
+            <button type="button" className="btn btn-info ">
                 Find an Investor
             </button>
             <button type="button" className="btn btn-warning">
                 Become an Investor
             </button>
-            <button type="button" className="btn btn-danger">
+            <button type="button" className="btn btn-light">
                Find a cofounder
             </button>
-            <button type="button" className="btn btn-success">
+            <button type="button" className="btn btn-primary">
                 Become a Cofounder
             </button>
+            <button type="button" className="btn btn-light">
+                CXO magazines
+            </button>
+            <button type="button" className="btn btn-secondary ">
+                Podcasts for CXOs
+            </button>
+            <button class="btn btn-success" >
+  Get Best Resume Templates 
+</button>
+<button class="btn btn-dark" >
+  News Updates Regarding CXO
+</button>
           
 <div className={styles.modalDiv}>
 

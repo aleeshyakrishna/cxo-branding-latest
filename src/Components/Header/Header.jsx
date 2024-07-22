@@ -3,19 +3,23 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import styles from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
 import Form from "../Form/Form";
+
 const Header = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div>
       <div className={styles.header_main}>
-
         <div className={styles.buttonDivs}>
-
           <div className={styles.buttonDivsContainer}>
-            <h2 className={styles.headerForm}>Crafting CXO Success Stories !</h2>
+            <h2 className={styles.headerForm}>Crafting CXO Success Stories!</h2>
             <div>
               <br />
               <p>Empowering CXOs to Shine through Personal Branding & Career Advancement Services !!</p>
+            </div>
+            <div className={styles.buttonExplore}>
+         
+              <button>Create Your SuccessStory  </button>
+              {/* <button>Create </button> */}
             </div>
           </div>
 
@@ -28,9 +32,7 @@ const Header = () => {
             <img  alt="" />
           </Link> */}
 
-
           <Form />
-
         </div>
         {/* <div
           className={styles.header_txt}
@@ -46,9 +48,7 @@ const Header = () => {
           </p>
         </div> */}
       </div>
-
     </div>
-
   );
 };
 

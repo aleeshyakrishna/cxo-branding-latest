@@ -31,7 +31,7 @@ const Form = () => {
   return (
     <div className={styles.form_container}>
       <form onSubmit={handleSubmit}>
-        <h3>Kindly fill the form below!</h3>
+        {/* <h3>Kindly fill the form below!</h3> */}
         <input
           type="text"
           name="name"
@@ -94,7 +94,7 @@ const Form = () => {
         </label> */}
         <div className={styles.submitButton}>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Start your Free Trial</button>
         </div>
       </form>
     </div>

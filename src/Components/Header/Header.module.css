@@ -24,7 +24,7 @@
     justify-content: space-between; 
 } */
 
-.buttonDivs button{
+/* .buttonDivs button{
     color: white;
     font-size: xx-large;
     height: 268%;
@@ -32,17 +32,17 @@
     border-radius: 5rem;
     margin-top: 5.7%;
     width: 90%;
-    /* gap: 2rem; */
+   
     opacity: 0.5;
     box-shadow: black;
     margin-left: 80px;
     background-color: black;
-}
+} */
 
-.buttonDivs button:hover{
+/* .buttonDivs button:hover{
     background-color: #f4bb44;
     color: black;
-}
+} */
 
 .buttonDivsContainer{
     color: white;
@@ -58,6 +58,18 @@
     margin-left: 170px;
     /* background-color: black; */
     /* justify-content: space-around; */
+}
+.buttonExplore{
+    display: flex;
+    
+}
+.buttonExplore button{
+    width: 150%;
+    border-radius: 1rem;
+    background-color: #f4bb40;
+}
+.buttonExplore button:hover{
+    background-color: #f4bb44;
 }
 .buttonDivsContainer h2{
     /* padding-top: 10%;
