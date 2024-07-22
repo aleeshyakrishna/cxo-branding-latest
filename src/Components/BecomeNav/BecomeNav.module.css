@@ -34,6 +34,7 @@
 }
 .modalDiv{
     background-color: blueviolet;
+    /* opacity: 0.5; */
 }
 
 @keyframes marquee {

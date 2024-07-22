@@ -2,28 +2,35 @@ import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import styles from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
+import Form from "../Form/Form";
 const Header = () => {
   const navigate = useNavigate()
   return (
     <div>
       <div className={styles.header_main}>
-        <div className={styles.header_text_container}>
-          {/* <Link to="/Cxocofounder" className="hdr-img">
-            <img  alt="" />
-          </Link> */}
-        </div>
+
         <div className={styles.buttonDivs}>
 
           <div className={styles.buttonDivsContainer}>
-            <h2>Crafting CXO Success Stories !</h2>
+            <h2 className={styles.headerForm}>Crafting CXO Success Stories !</h2>
             <div>
-            <br/>
-            <p>Empowering CXOs to Shine through Personal Branding & Career Advancement Services !!</p>
+              <br />
+              <p>Empowering CXOs to Shine through Personal Branding & Career Advancement Services !!</p>
             </div>
-            </div> 
+          </div>
+
           {/* <br /> */}
 
           {/* <Link><button >Start something on My Own!</button></Link> */}
+        </div>
+        <div className={styles.header_form_container}>
+          {/* <Link to="/Cxocofounder" className="hdr-img">
+            <img  alt="" />
+          </Link> */}
+
+
+          <Form />
+
         </div>
         {/* <div
           className={styles.header_txt}

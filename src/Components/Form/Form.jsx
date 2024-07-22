@@ -83,7 +83,7 @@ const Form = () => {
           onChange={handleChange}
         />
         <input type="file" name="file" onChange={handleChange} />
-        <label>
+        {/* <label>
           <input
             type="checkbox"
             name="complimentaryCall"
@@ -91,7 +91,7 @@ const Form = () => {
             onChange={handleChange}
           />
           I want a 10mins complimentary call!
-        </label>
+        </label> */}
         <div className={styles.submitButton}>
 
         <button type="submit">Submit</button>

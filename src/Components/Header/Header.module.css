@@ -12,9 +12,10 @@
     background-color: hsl(0, 0%, 96%);
     z-index: -3;
     display: flex;
+    gap: 3px;
     background-repeat: no-repeat;
 
-    flex-direction: column;
+    /* flex-direction: column; */
     
 }
 /* .buttonDivs{
@@ -52,29 +53,33 @@
     margin-top: 5.7%;
     width: 50%;
     /* gap: 2rem; */
-    opacity: 0.4;
+    /* opacity: 0.4; */
     /* box-shadow: black; */
     margin-left: 170px;
-    background-color: black;
+    /* background-color: black; */
     /* justify-content: space-around; */
 }
 .buttonDivsContainer h2{
-    padding-top: 10%;
-    padding-left: 19%;
+    /* padding-top: 10%;
+    padding-left: 19%; */
     /* color: black;
     z-index: 3; */
 }
 
 .buttonDivsContainer p{
-    padding-top: 0%;
-    padding-left: 12%;
+    /* padding-top: 0%;
+    padding-left: 12%; */
     /* padding-left: 5%; */
 }
 
+.header_form_container{
+    width: 50%;
+}
 
 
-
-
+.headerForm{
+    
+}
 
 @media screen and (max-width: 600px) {
 

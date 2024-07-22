@@ -17,15 +17,15 @@ function BecomeNav() {
  Business Startup Ideas
 </button>
 
-            <button type="button" className="btn btn-success">
+            {/* <button type="button" className="btn btn-success">
                 Start Something on Your Own?
-            </button>
+            </button> */}
             <button type="button" className="btn btn-danger">
                 Community of CEOs
             </button>
-            <button type="button" className="btn btn-warning">
+            {/* <button type="button" className="btn btn-warning">
             Looking for a Job?
-            </button>
+            </button> */}
             <button type="button" className="btn btn-info">
                 Podcasts for CXOs
             </button>
@@ -35,6 +35,22 @@ function BecomeNav() {
             <button type="button" className="btn btn-warning">
             Become a Freelancer
             </button>
+            <button type="button" className="btn btn-light">
+                Become a Mentor
+            </button>
+            <button type="button" className="btn btn-dark">
+                Find an Investor
+            </button>
+            <button type="button" className="btn btn-warning">
+                Become an Investor
+            </button>
+            <button type="button" className="btn btn-danger">
+               Find a cofounder
+            </button>
+            <button type="button" className="btn btn-success">
+                Become a Cofounder
+            </button>
+          
 <div className={styles.modalDiv}>
 
     <div  className="modal fade" id="jobModal" tabIndex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
