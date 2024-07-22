@@ -3,19 +3,31 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import styles from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
 import Form from "../Form/Form";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+
 const Header = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div>
       <div className={styles.header_main}>
-
         <div className={styles.buttonDivs}>
-
           <div className={styles.buttonDivsContainer}>
-            <h2 className={styles.headerForm}>Crafting CXO Success Stories !</h2>
+            <h2 className={styles.headerForm}>
+              Crafting CXO Success Stories !
+            </h2>
             <div>
               <br />
-              <p>Empowering CXOs to Shine through Personal Branding & Career Advancement Services !!</p>
+              <p className="">
+                Empowering CXOs to Shine through Personal Branding & Career
+                Advancement Services !!
+              </p>
+            </div>
+            <div
+              className={styles.ctaForm}
+              onClick={() => navigate("/contact")}
+            >
+              Explore your journey of success with us!
+              <KeyboardArrowRightIcon className={styles.ctaFormIcon} />
             </div>
           </div>
 
@@ -28,9 +40,8 @@ const Header = () => {
             <img  alt="" />
           </Link> */}
 
-
-          <Form />
-
+          {/* <Form /> */}
+          <img src="https://storage.googleapis.com/limecube-live-c29b24b1/root/Blog/business-partners-illustration.jpg" />
         </div>
         {/* <div
           className={styles.header_txt}
@@ -46,9 +57,7 @@ const Header = () => {
           </p>
         </div> */}
       </div>
-
     </div>
-
   );
 };
 
