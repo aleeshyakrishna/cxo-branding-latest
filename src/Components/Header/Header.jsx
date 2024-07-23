@@ -1,52 +1,29 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
 import styles from "./Header.module.css";
-import { useNavigate } from "react-router-dom";
-import Form from "../Form/Form";
+import Stepper from "../Steppers/Steppers.jsx";
+import Connector from "../Connector/Connector.jsx";
 
 const Header = () => {
-  const navigate = useNavigate();
   return (
-    <div>
-      <div className={styles.header_main}>
-        <div className={styles.buttonDivs}>
-          <div className={styles.buttonDivsContainer}>
-            <h2 className={styles.headerForm}>Crafting CXO Success Stories!</h2>
-            <div>
-              <br />
-              <p>Empowering CXOs to Shine through Personal Branding & Career Advancement Services !!</p>
-            </div>
-            <div className={styles.buttonExplore}>
-         
-              <button>Create Your SuccessStory  </button>
-              {/* <button>Create </button> */}
-            </div>
+    <div className={styles.header_main}>
+      {/* <div className={styles.buttonDivs}> */}
+        <div className={styles.buttonDivsContainer}>
+          <h2 className={styles.headerForm}>Creating CXO Stories ...!!!</h2>
+          <div>
+            <br />
+            <p>Empowering CXOs to Shine through Personal Branding & Career Advancement Services</p>
           </div>
-
-          {/* <br /> */}
-
-          {/* <Link><button >Start something on My Own!</button></Link> */}
+          <div className={styles.buttonExplore}>
+            <button>Create Your SuccessStory</button>
+          </div>
+          <Stepper />
         </div>
-        <div className={styles.header_form_container}>
-          {/* <Link to="/Cxocofounder" className="hdr-img">
-            <img  alt="" />
-          </Link> */}
+      {/* </div> */}
+      <div className={styles.header_form_container}>
+        <div className={styles.connector}>
 
-          <Form />
+        <Connector />
         </div>
-        {/* <div
-          className={styles.header_txt}
-          data-aos="fade-down"
-          data-aos-duration="1000"
-        >
-          <h1>Creating </h1>
-          <h1>CXO Stories</h1>
-          <p>
-            With our exceptional resume writing service, you can differentiate
-            yourself from the competition <br />
-            and make a lasting impact on potential employers.
-          </p>
-        </div> */}
       </div>
     </div>
   );

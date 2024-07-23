@@ -1,0 +1,6 @@
+/* Example CSS content */
+
+  .no-scrollbar ::-webkit-scrollbar{
+    display: none;
+  }
+

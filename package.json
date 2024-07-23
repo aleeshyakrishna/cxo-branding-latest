@@ -16,6 +16,8 @@
     "@mui/icons-material": "^5.16.4",
     "@mui/material": "^5.16.4",
     "@mui/system": "^5.16.4",
+    "@syncfusion/ej2-react-buttons": "^26.1.40",
+    "@syncfusion/ej2-react-diagrams": "^26.1.42",
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
     "popper.js": "^1.16.1",

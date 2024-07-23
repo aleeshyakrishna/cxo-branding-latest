@@ -5,16 +5,16 @@
 } */
 
 .header_main {
-    background-image: url("./../../Images/hehe.jpg");
-    height: 78vh;
+    /* background-image: url("./../../Images/hehe.jpg"); */
+    /* height: 78vh; */
     width: 100%;
-    background-size: cover;
+    /* background-size: cover; */
     background-color: hsl(0, 0%, 96%);
-    z-index: -3;
+    /* z-index: -3; */
     display: flex;
-    gap: 3px;
-    background-repeat: no-repeat;
-
+    /* gap: 3px; */
+    /* background-repeat: no-repeat; */
+    background-color: black;
     /* flex-direction: column; */
     
 }
@@ -64,7 +64,7 @@
     
 }
 .buttonExplore button{
-    width: 150%;
+    width: 100%;
     border-radius: 1rem;
     background-color: #f4bb40;
 }
@@ -84,11 +84,24 @@
     /* padding-left: 5%; */
 }
 
-.header_form_container{
-    width: 50%;
+.header_form_container {
+    /* margin-right: 170px; */
+    width: 84%; 
+    /* max-width: 100%;  */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+
+    justify-content: center;
+    align-items: center; 
+    /* margin-bottom: 200px; */
 }
-
-
+.connector{
+    margin-top: -70px;
+    /* opacity: 0.8; */
+}
+.header_form_container::-webkit-scrollbar {
+    display: none;
+  }
 .headerForm{
     
 }
@@ -147,7 +160,7 @@
 /* Tablet Query */
 @media (min-width: 768px) and (max-width: 1024px) {
     .header_box {
-        position: absolute;
+        /* position: absolute; */
         margin-top: 50%;
         margin-left: 4%;
         background-color: var(--black);
@@ -162,7 +175,7 @@
     }
 
     .header_image img {
-        position: absolute;
+        /* position: absolute; */
         margin-left: -21%;
         width: 50%;
         z-index: 1;
@@ -182,7 +195,7 @@
     .hrd_icons {
         cursor: pointer;
         font-size: 30px;
-        position: absolute;
+        /* position: absolute; */
         margin-left: 30px;
         margin-top: -40px;
     }
