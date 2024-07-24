@@ -39,15 +39,19 @@ const Header = () => {
         <button>become a mentor</button>
         <button>become a Cofounder</button>
       </div> */}
+      
       <div className={styles.header_form_container}>
         <div className={styles.caroselDiv}>
+          <hr/>
           <ResumeCarosel />
-          
           <div style={{'color':'black'}}>
                   <marquee  behavior="smooth" direction="right"><p>Resume Samples</p></marquee>
-        </div>        
+        </div>   
+        <hr/>     
         <div className={styles.splitsNews}>
-           
+           <p>Pricing</p>
+           <p>Know more about Us</p>
+           <p style={{color:'#ccc'}}>brows samples</p>
         </div>
         </div>
         
