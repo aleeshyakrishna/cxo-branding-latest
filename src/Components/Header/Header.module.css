@@ -8,18 +8,19 @@
    
     
 }
-/* .thoughs{
+.thoughs{
     width: 10%;
-} */
-/* .thoughs button{
+}
+.thoughs button{
     opacity: 0.5;
     height: 50px;
     width: 200px;
     border-radius: 1rem;
     box-sizing: border-box;
     border: none;
+ 
 
-} */
+}
 
 .buttonDivsContainer {
     
@@ -100,6 +101,9 @@
 .splitsNews{
     height: 240px;
    
+}
+.splitsNews p{
+    padding-left: 50px;
 }
 
 .header_form_container::-webkit-scrollbar {

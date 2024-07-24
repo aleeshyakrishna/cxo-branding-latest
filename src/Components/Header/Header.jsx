@@ -35,10 +35,10 @@ const Header = () => {
           </div> */}
      
       </div>
-      {/* <div className={styles.thoughs}>
+      <div className={styles.thoughs}>
         <button>become a mentor</button>
-        <button>become a Cofounder</button>
-      </div> */}
+        {/* <button>become a Cofounder</button> */}
+      </div>
       
       <div className={styles.header_form_container}>
         <div className={styles.caroselDiv}>
@@ -50,8 +50,9 @@ const Header = () => {
         <hr/>     
         <div className={styles.splitsNews}>
            <p>Pricing</p>
-           <p>Know more about Us</p>
-           <p>About CoFoundr</p>
+           <hr/> 
+           {/* <p>Know more about Us</p>
+           <p>About CoFoundr</p> */}
            <p style={{color:'#ccc'}}>brows samples</p>
         </div>
         </div>

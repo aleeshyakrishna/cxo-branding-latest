@@ -24,6 +24,7 @@ const Form = () => {
     
       const handleSubmit = (e) => {
         e.preventDefault();
+        
         toast.success("Form saved successfully!")
         console.log(formData);
       };
