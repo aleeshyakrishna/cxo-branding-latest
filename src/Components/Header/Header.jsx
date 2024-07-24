@@ -51,6 +51,7 @@ const Header = () => {
         <div className={styles.splitsNews}>
            <p>Pricing</p>
            <p>Know more about Us</p>
+           <p>About CoFoundr</p>
            <p style={{color:'#ccc'}}>brows samples</p>
         </div>
         </div>

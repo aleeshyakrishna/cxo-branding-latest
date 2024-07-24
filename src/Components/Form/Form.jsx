@@ -94,7 +94,7 @@ const Form = () => {
         </label> */}
         <div className={styles.submitButton}>
 
-        <button type="submit">Start your Free Trial</button>
+        <button type="submit">Submit</button>
         </div>
       </form>
     </div>

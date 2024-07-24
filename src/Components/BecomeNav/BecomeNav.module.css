@@ -4,89 +4,90 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ccc;
-  }
-  
-  .scrollContainer {
+}
+
+.scrollContainer {
     padding-left: 30px;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-   
-  }
-  
-  .scrollContent {
+}
+
+.scrollContent {
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
     white-space: nowrap;
     padding: 0;
     margin: 0;
-  }
-  
-  .navItem {
+}
+
+.navItem {
     margin-right: 20px;
     color: black;
     list-style: none;
+}
 
-  }
-  
-  .navText {
+.navText {
     color: black;
-
     cursor: pointer;
     text-decoration: none;
-  }
-  
-  .navText:hover {
+}
+
+.navText:hover {
     text-decoration: none;
     color: whitesmoke;
+}
 
-  }
-  
-  .scrollButton {
+.scrollButton {
     background-color: #ddd;
     border: none;
     padding: 10px;
     opacity: 0.5;
     cursor: pointer;
-  }
-  
-  .scrollButton:focus {
+}
+
+.scrollButton:focus {
     outline: none;
-  }
-  
-  .scrollButton:first-of-type {
+}
+
+.scrollButton:first-of-type {
     position: absolute;
     left: 0;
-  }
-  
-  .scrollButton:last-of-type {
+}
+
+.scrollButton:last-of-type {
     position: absolute;
     right: 0;
-  }
-  
-  /* .modalDiv {
-    margin-top: 20px;
-    background-color: transparent;
-  } */
-  
-.modalDiv .modal-content {
-    background-color: rgba(255, 255, 255, 0.9); /* Adjust the transparency here */
+}
+
+/* Added styles for the form popup */
+.formPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContent {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.closeButton {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: white;
     border: none;
-    box-shadow: none;
-  }
-  
-  .modalDiv .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the backdrop transparency here */
-  }
-  
-  .modalDiv .modal-header,
-  .modalDiv .modal-footer {
-    border: none;
-  }
-  
-  .modalDiv .btn-close {
-    background-color: transparent;
-    border: none;
-  }
+    font-size: 20px;
+    cursor: pointer;
+}
