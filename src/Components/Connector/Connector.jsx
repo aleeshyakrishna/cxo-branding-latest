@@ -8,7 +8,7 @@ let cxo = [
   { id: 'cxo', text: 'CXO BRANDING' },
   { id: 'Become a Cofounder', text: 'Become a Cofounder' },
   { id: 'Become a Freelancer', text: 'Become a Freelancer' },
-  { id: 'Best Resume Templates', text: 'Best Resume Templates' },
+  { id: 'Best Resume Templates', text: 'Resume Samples' },
   { id: 'Find an Investor', text: 'Find an Investor' },
   { id: 'Become an Investor', text: 'Become an Investor' },
 ];
@@ -184,6 +184,7 @@ function Connector() {
             ref={(diagram) => (diagramInstance = diagram)}
             width={'100%'}
             height={'645px'}
+            position={'absolute'}
             nodes={cxo}
             connectors={connections}
             getNodeDefaults={(obj) => {
@@ -218,6 +219,88 @@ function Connector() {
             <Inject services={[UndoRedo]} />
           </DiagramComponent>
         </div>
+        {/* <div class="content-wrapper" style="width: 100%;">
+  <div id="diagram" class="e-control e-diagram e-lib e-droppable e-tooltip" style="width: 100%;height: 645px;overflow: hidden;">
+    <div id="diagramcontent" tabindex="0" style="width: 100%; height: 645px; position: absolute; left: 0px; top: 0px; overflow: auto; background: transparent; cursor: default;">
+      <svg id="diagram_backgroundLayer_svg" width="486" height="628" style="position: absolute; top: 0px; left: 0px; overflow: hidden; pointer-events: none;">
+        <g id="diagram_backgroundImageLayer" class="e-background-image-layer"></g>
+        <g id="diagram_backgroundLayer" class="e-background-layer">
+          <rect id="diagram_backgroundLayerrect" x="114" y="107" width="372" height="359" visibility="visible" transform="rotate(0,114,107)" rx="0" ry="0" opacity="1" pointer-events="none" stroke-width="1" stroke-dasharray="0" fill="transparent"></rect>
+        </g>
+      </svg>
+      <svg id="diagram_gridline_svg" width="486" height="628" class="e-grid-layer" style="position: absolute; top: 0px; left: 0px; overflow: hidden; pointer-events: none;">
+        <g id="diagram_gridline" transform="translate(0,0)">
+          <rect id="diagram_grid_rect" x="0" y="0" width="100%" height="100%" fill="url(#diagram_pattern)"></rect>
+        </g>
+        <defs id="diagram_grid_pattern_defn">
+          <pattern id="diagram_pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"></pattern>
+        </defs>
+      </svg>
+      <div id="diagram_diagramLayer_div" style="width: 486px; height: 628px; position: absolute; top: 0px; left: 0px; overflow: hidden; pointer-events: none;">
+        <svg id="diagram_diagramLayer_svg" width="486" height="628" class="e-diagram-layer" style="pointer-events: all;">
+          <g>
+            <g id="diagram_diagramLayer" transform="translate(0,0),scale(1)">
+              <!-- Original Elements -->
+              <g id="cxo_groupElement">
+                <rect id="cxo" x="250" y="250" width="100" height="100" visibility="visible" transform="rotate(0,300,300)" rx="0" ry="0" opacity="1" role="img" aria-label="cxo" stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="transparent"></rect>
+                <g id="cxo_content_groupElement" transform="translate(0,0)">
+                  <path d="M100,50 C100,77.61,77.61,100,50,100 C22.39,100,0,77.61,0,50 C0,22.39,22.39,0,50,0 C77.61,0,100,22.39,100,50 Z" id="cxo_content" transform="rotate(0,300,300)translate(250,250)" visibility="visible" opacity="1" role="img" aria-label="CXO BRANDING" stroke="#024249" stroke-width="1" stroke-dasharray="none" fill="#f4bb40"></path>
+                </g>
+                <g id="cxo_oV9q1_groupElement" transform="translate(0,0)">
+                  <rect id="cxo_oV9q1" x="252.9921875" y="292.8" width="94.015625" height="14.399999999999999" visibility="visible" transform="rotate(0,300,300)" rx="0" ry="0" opacity="1" pointer-events="none" stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="transparent"></rect>
+                  <text stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="black" id="cxo_oV9q1_text" visibility="visible" text-decoration="None" transform="rotate(0,300,300)translate(252.9921875,292.8)" opacity="1" role="img" aria-label="cxo_oV9q1" style="font-style: normal; font-weight: bold; font-size: 12px; font-family: Arial;">
+                    <tspan x="0" y="10.8">CXO BRANDING</tspan>
+                  </text>
+                </g>
+              </g>
+              <g id="Become a Cofounder_groupElement">
+                <rect id="Become a Cofounder" x="250" y="106.75999999999999" width="100" height="100" visibility="visible" transform="rotate(0,300,156.76)" rx="0" ry="0" opacity="1" role="img" aria-label="Become a Cofounder" stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="transparent"></rect>
+                <g id="Become a Cofounder_content_groupElement" transform="translate(0,0)">
+                  <path d="M100,50 C100,77.61,77.61,100,50,100 C22.39,100,0,77.61,0,50 C0,22.39,22.39,0,50,0 C77.61,0,100,22.39,100,50 Z" id="Become a Cofounder_content" transform="rotate(0,300,156.76)translate(250,106.75999999999999)" visibility="visible" opacity="1" role="img" aria-label="Become a Cofounder" stroke="#024249" stroke-width="1" stroke-dasharray="none" fill="#ff0000"></path>
+                </g>
+                <g id="Become a Cofounder_oV9q1_groupElement" transform="translate(0,0)">
+                  <rect id="Become a Cofounder_oV9q1" x="252.9921875" y="149.56" width="94.015625" height="14.399999999999999" visibility="visible" transform="rotate(0,300,156.76)" rx="0" ry="0" opacity="1" pointer-events="none" stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="transparent"></rect>
+                  <text stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="black" id="Become a Cofounder_oV9q1_text" visibility="visible" text-decoration="None" transform="rotate(0,300,156.76)translate(252.9921875,149.56)" opacity="1" role="img" aria-label="Become a Cofounder_oV9q1" style="font-style: normal; font-weight: bold; font-size: 12px; font-family: Arial;">
+                    <tspan x="0" y="10.8">Become a Cofounder</tspan>
+                  </text>
+                </g>
+              </g>
+              <g id="Best Resume Templates_groupElement">
+                <rect id="Best Resume Templates" x="400" y="400" width="100" height="100" visibility="visible" transform="rotate(0,450,450)" rx="0" ry="0" opacity="1" role="img" aria-label="Best Resume Templates" stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="transparent"></rect>
+                <g id="Best Resume Templates_content_groupElement" transform="translate(0,0)">
+                  <path d="M100,50 C100,77.61,77.61,100,50,100 C22.39,100,0,77.61,0,50 C0,22.39,22.39,0,50,0 C77.61,0,100,22.39,100,50 Z" id="Best Resume Templates_content" transform="rotate(0,450,450)translate(400,400)" visibility="visible" opacity="1" role="img" aria-label="Best Resume Templates" stroke="#024249" stroke-width="1" stroke-dasharray="none" fill="#f4bb40"></path>
+                </g>
+                <g id="Best Resume Templates_oV9q1_groupElement" transform="translate(0,0)">
+                  <rect id="Best Resume Templates_oV9q1" x="402.9921875" y="442.8" width="94.015625" height="14.399999999999999" visibility="visible" transform="rotate(0,450,450)" rx="0" ry="0" opacity="1" pointer-events="none" stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="transparent"></rect>
+                  <text stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="black" id="Best Resume Templates_oV9q1_text" visibility="visible" text-decoration="None" transform="rotate(0,450,450)translate(402.9921875,442.8)" opacity="1" role="img" aria-label="Best Resume Templates_oV9q1" style="font-style: normal; font-weight: bold; font-size: 12px; font-family: Arial;">
+                    <tspan x="0" y="10.8">Best Resume Templates</tspan>
+                  </text>
+                </g>
+              </g>
+              <g id="Find an Investor_groupElement">
+                <rect id="Find an Investor" x="168.81" y="408.68" width="94.015625" height="14.399999999999999" visibility="visible" transform="rotate(0,215.81,415.88)" rx="0" ry="0" opacity="1" role="img" aria-label="Find an Investor" stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="transparent"></rect>
+                <g id="Find an Investor_content_groupElement" transform="translate(0,0)">
+                  <path d="M100,50 C100,77.61,77.61,100,50,100 C22.39,100,0,77.61,0,50 C0,22.39,22.39,0,50,0 C77.61,0,100,22.39,100,50 Z" id="Find an Investor_content" transform="rotate(0,215.81,415.88)translate(165.81,365.88)" visibility="visible" opacity="1" role="img" aria-label="Find an Investor" stroke="#024249" stroke-width="1" stroke-dasharray="none" fill="#f4bb40"></path>
+                </g>
+                <g id="Find an Investor_oV9q1_groupElement" transform="translate(0,0)">
+                  <rect id="Find an Investor_oV9q1" x="168.80609375" y="408.68" width="94.015625" height="14.399999999999999" visibility="visible" transform="rotate(0,215.81,415.88)" rx="0" ry="0" opacity="1" pointer-events="none" stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="transparent"></rect>
+                  <text stroke="transparent" stroke-width="0" stroke-dasharray="none" fill="black" id="Find an Investor_oV9q1_text" visibility="visible" text-decoration="None" transform="rotate(0,215.81,415.88)translate(168.80609375,408.68)" opacity="1" role="img" aria-label="Find an Investor_oV9q1" style="font-style: normal; font-weight: bold; font-size: 12px; font-family: Arial;">
+                    <tspan x="0" y="10.8">Find a Partner</tspan>
+                  </text>
+                </g>
+              </g>
+              <!-- New Circle Element -->
+              <g id="new_circle_groupElement">
+                <circle id="new_circle" cx="200" cy="200" r="50" fill="#00ff00" stroke="#000000" stroke-width="2"></circle>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+        </div> */}
+
       </div>
     </div>
   );

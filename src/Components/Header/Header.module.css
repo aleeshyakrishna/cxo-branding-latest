@@ -1,110 +1,119 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 
 .header_main {
-    /* background-image: url("./../../Images/hehe.jpg"); */
-    /* height: 78vh; */
+    height: 84vh;
     width: 100%;
-    /* background-size: cover; */
-    background-color: hsl(0, 0%, 96%);
-    /* z-index: -3; */
+    background-image: url("./../../Images/coatsoot.webp");
+    background-size: cover;
     display: flex;
-    /* gap: 3px; */
-    /* background-repeat: no-repeat; */
-    background-color: black;
-    /* flex-direction: column; */
-    
-}
-/* .buttonDivs{
-    margin-bottom: 100px; 
-     display: flex; 
-    justify-content: space-between; 
-} */
-
-/* .buttonDivs button{
-    color: white;
-    font-size: xx-large;
-    height: 268%;
-    font-weight: bold;
-    border-radius: 5rem;
-    margin-top: 5.7%;
-    width: 90%;
    
-    opacity: 0.5;
-    box-shadow: black;
-    margin-left: 80px;
-    background-color: black;
-} */
-
-/* .buttonDivs button:hover{
-    background-color: #f4bb44;
-    color: black;
-} */
-
-.buttonDivsContainer{
-    color: white;
-    font-size: xx-large;
-    height: 100%;
-    font-weight: bold;
-    border-radius: 1rem;
-    margin-top: 5.7%;
-    width: 50%;
-    /* gap: 2rem; */
-    /* opacity: 0.4; */
-    /* box-shadow: black; */
-    margin-left: 170px;
-    /* background-color: black; */
-    /* justify-content: space-around; */
-}
-.buttonExplore{
-    display: flex;
     
 }
-.buttonExplore button{
-    width: 100%;
+/* .thoughs{
+    width: 10%;
+} */
+/* .thoughs button{
+    opacity: 0.5;
+    height: 50px;
+    width: 200px;
     border-radius: 1rem;
-    background-color: #f4bb40;
+    box-sizing: border-box;
+    border: none;
+
+} */
+
+.buttonDivsContainer {
+    
+   
+    width: 75%;
+    padding-left: 100px;
+    text-align: left;
+    box-sizing: border-box;
+    height: 100%;
 }
-.buttonExplore button:hover{
-    background-color: #f4bb44;
+.newsSplilts{
+    background-color: black;
+    height: 30%;
+    display: flex;
+}
+.split1{
+    width: 50%;
+    background-color: white;
+}
+.split1 img{
+    height: 164px;
+    width: 456px;
+}
+.split2 img{
+    height: 164px;
+    width: 456px;
+}
+.split2{
+    width: 50%;
+    background-color: yellow;
 }
 .buttonDivsContainer h2{
-    /* padding-top: 10%;
-    padding-left: 19%; */
-    /* color: black;
-    z-index: 3; */
+    margin-top: 30.7%;
+    color: white;
+    font-size: 4rem; /* Adjust as needed for banner text */
+    font-weight: 500; /* Bold text */
+    border-radius: 1rem;
+    line-height: 1; /* Adjust line height for better readability */
+    letter-spacing: 0.1rem; /* Adjust letter spacing as needed */
+}
+.buttonDivsContainer p{
+   
+    color: white;
+    font-size: 2rem; /* Adjust as needed for banner text */
+    font-weight: 200; /* Bold text */
+    border-radius: 1rem;
+    line-height: 1; /* Adjust line height for better readability */
+    letter-spacing: 0.1rem; /* Adjust letter spacing as needed */
 }
 
-.buttonDivsContainer p{
-    /* padding-top: 0%;
-    padding-left: 12%; */
-    /* padding-left: 5%; */
+
+.buttonDivsContainer button{
+    width: 40%;
+    height: 60px;
+    border-radius: 1rem;
+    background-color: #f4bb40;
+    font-size: large;
+}
+.buttonDivsContainer button:hover{
+    background-color: white;
+    opacity: 0.8;
 }
 
 .header_form_container {
     /* margin-right: 170px; */
-    width: 84%; 
-    /* max-width: 100%;  */
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
-
+    width: 25%; 
+    /* height: 10px; */
+    color: black;
     justify-content: center;
     align-items: center; 
-    /* margin-bottom: 200px; */
+    background-color: white;
 }
-.connector{
-    margin-top: -70px;
-    /* opacity: 0.8; */
+
+.caroselDiv{
+    /* background-color: black; */
+    height: 100%;
 }
+.splitsNews{
+    background-color: white;
+    height: 240px;
+}
+
 .header_form_container::-webkit-scrollbar {
     display: none;
   }
-.headerForm{
-    
-}
+  .marqueeText {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bold;
+    color: #f4bb40; /* Adjust as needed */
+    padding: 10px 0;
+  }
 
 @media screen and (max-width: 600px) {
 
@@ -119,12 +128,17 @@
         background-repeat: no-repeat;
     }
 
-    .buttonDivs{
-        /* margin-bottom: 100px; */
-        /* display: flex; */
-        /* justify-content: space-between; */
-    }
+   
 
+.marqueeText {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bold;
+    color: #f4bb40; /* Adjust as needed */
+    padding: 10px 0;
+  }
     .buttonDivs button{
         color: white;
         font-size: xx-large;

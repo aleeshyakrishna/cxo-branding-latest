@@ -1,43 +1,92 @@
 .mainBecom {
-    background-color: black;
+    background-color: #f4bb40;
     padding: 10px;
-    /* padding-left: 70px; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    
-}
-.mainBecom button{
-   /* padding-left: 10%; */
-   /* gap: 10%; */
-   /* justify-content: space-between; */
-   align-items: center;
-}
-.marqueeInner {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 30s linear infinite;
-    color: whitesmoke;
-}
-.marquee {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .scrollContainer {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
     overflow: hidden;
+   
+  }
+  
+  .scrollContent {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     white-space: nowrap;
-    width: 100%;
-    box-sizing: border-box;
-    color: whitesmoke;
-}
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navItem {
+    margin-right: 20px;
+    color: black;
+    list-style: none;
 
-.marquee p {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 10s linear infinite;
-    color: whitesmoke;
-}
-.modalDiv{
-    background-color: blueviolet;
-    /* opacity: 0.5; */
-}
+  }
+  
+  .navText {
+    color: black;
 
-@keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .navText:hover {
+    text-decoration: none;
+    color: whitesmoke;
+
+  }
+  
+  .scrollButton {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .scrollButton:focus {
+    outline: none;
+  }
+  
+  .scrollButton:first-of-type {
+    position: absolute;
+    left: 0;
+  }
+  
+  .scrollButton:last-of-type {
+    position: absolute;
+    right: 0;
+  }
+  
+  /* .modalDiv {
+    margin-top: 20px;
+    background-color: transparent;
+  } */
+  
+.modalDiv .modal-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust the transparency here */
+    border: none;
+    box-shadow: none;
+  }
+  
+  .modalDiv .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the backdrop transparency here */
+  }
+  
+  .modalDiv .modal-header,
+  .modalDiv .modal-footer {
+    border: none;
+  }
+  
+  .modalDiv .btn-close {
+    background-color: transparent;
+    border: none;
+  }

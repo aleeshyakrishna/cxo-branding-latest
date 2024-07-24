@@ -1,207 +1,73 @@
 import React from 'react';
 import styles from './BecomeNav.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Form from '../Form/Form';
 
 function BecomeNav() {
-  
+  const scroll = (direction) => {
+    const container = document.querySelector(`.${styles.scrollContent}`);
+    const scrollAmount = 300; // Adjust as needed
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  };
 
-    return (
-        <div className={styles.mainBecom}>
-            {/* <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jobModal">
-                Looking for a Job?
-            </button> */}
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jobModal">
- Business Startup Ideas
-</button>
+  const items = [
+    { text: 'Business Startup Ideas', target: '#jobModal' },
+    { text: 'Community for CXOs' ,target: '#jobModal'},
+    { text: 'Join our Meetup-group',target: '#jobModal' },
+    { text: 'Become a Freelancer' ,target: '#jobModal'},
+    { text: 'Become a Mentor',target: '#jobModal' },
+    { text: 'Find a Mentor',target: '#jobModal' },
+    { text: 'Find an Investor' ,target: '#jobModal'},
+    { text: 'Become an Investor',target: '#jobModal' },
+    { text: 'Find a cofounder' ,target: '#jobModal'},
+    { text: 'Become a Cofounder',target: '#jobModal' },
+    { text: 'CXO magazines',target: '#jobModal' },
+    { text: 'Podcasts for CXOs',target: '#jobModal' },
+    { text: 'Resume Samples',target: '#jobModal' },
+    { text: 'News Updates Regarding CXO',target: '#jobModal' }
+  ];
 
-            <button type="button" className="btn btn-success">
-                Community for CXOs
-            </button>
-            {/* <button type="button" className="btn btn-danger">
-                Community of CEOs
-            </button> */}
-            {/* <button type="button" className="btn btn-warning">
-            Looking for a Job?
-            </button> */}
-            <button type="button" className="btn btn-info">
-                Join Our MeetUp
-            </button>
-            <button type="button" className="btn btn-danger">
-                Join our Meetup-group
-            </button>
-            <button type="button" className="btn btn-warning">
-            Become a Freelancer
-            </button>
-            <button type="button" className="btn btn-light">
-                Become a Mentor
-            </button>
-            <button type="button" className="btn btn-danger">
-                Find a Mentor
-            </button>
-            <button type="button" className="btn btn-info ">
-                Find an Investor
-            </button>
-            <button type="button" className="btn btn-warning">
-                Become an Investor
-            </button>
-            <button type="button" className="btn btn-light">
-               Find a cofounder
-            </button>
-            <button type="button" className="btn btn-primary">
-                Become a Cofounder
-            </button>
-            <button type="button" className="btn btn-light">
-                CXO magazines
-            </button>
-            <button type="button" className="btn btn-secondary ">
-                Podcasts for CXOs
-            </button>
-            <button class="btn btn-success" >
-  Get Best Resume Templates 
-</button>
-<button class="btn btn-dark" >
-  News Updates Regarding CXO
-</button>
-          
-<div className={styles.modalDiv}>
-
-    <div  className="modal fade" id="jobModal" tabIndex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div className="modal-dialog modal-dialog-centered">
-    <div className="modal-content">
-      <div className="modal-header">
-        {/* <h5 className="modal-title" id="jobModalLabel">Looking for a Job?</h5> */}
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  return (
+    <div className={styles.mainBecom}>
+      <button className={styles.scrollButton} onClick={() => scroll(-1)}>&#9664;</button>
+      <div className={styles.scrollContainer}>
+        <ul className={styles.scrollContent}>
+          {items.map((item, index) => (
+            <li key={index} className={styles.navItem}>
+              <span
+                className={styles.navText}
+                data-bs-toggle={item.target ? 'modal' : ''}
+                data-bs-target={item.target ? item.target : ''}
+              >
+                {item.text} {" "}|
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
-      <div className="modal-body">
-        <Form />
-      </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        {/* <button type="button" className="btn btn-primary">Save changes</button> */}
+      <button className={styles.scrollButton} onClick={() => scroll(1)}>&#9654;</button>
+      <div className={styles.modalDiv}>
+        <div className="modal fade" id="jobModal" tabIndex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+              <div className="modal-header">
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                <Form />
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
-
-        </div>
-    );
+  );
 }
 
 export default BecomeNav;
-
-
-
-
-            // import React, { useState } from 'react';
-            // import Box from '@mui/material/Box';
-            // import Drawer from '@mui/material/Drawer';
-            // import Button from '@mui/material/Button';
-            // import List from '@mui/material/List';
-            // import Divider from '@mui/material/Divider';
-            // import ListItem from '@mui/material/ListItem';
-            // import ListItemButton from '@mui/material/ListItemButton';
-            // import ListItemIcon from '@mui/material/ListItemIcon';
-            // import ListItemText from '@mui/material/ListItemText';
-            // import InboxIcon from '@mui/icons-material/MoveToInbox';
-            // import PortraitSharpIcon from '@mui/icons-material/PortraitSharp';
-            // import MailIcon from '@mui/icons-material/Mail';
-            // import styles from './BecomeNav.module.css';
-            // import 'bootstrap/dist/css/bootstrap.min.css';
-            
-            // function BecomeNav() {
-            //   const [state, setState] = useState({
-            //     left: false,
-            //   });
-            //   const [showForm, setShowForm] = useState(false);
-            
-            //   const toggleDrawer = (anchor, open) => (event) => {
-            //     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-            //       return;
-            //     }
-            
-            //     setState({ ...state, [anchor]: open });
-            //   };
-            
-            //   const handleStarredClick = () => {
-            //     setShowForm(true);
-            //   };
-            
-            //   const list = (anchor) => (
-            //     <Box
-            //       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
-            //       role="presentation"
-            //       onClick={toggleDrawer(anchor, false)}
-            //       onKeyDown={toggleDrawer(anchor, false)}
-            //     >
-            //       <List>
-            //         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            //           <ListItem key={text} disablePadding>
-            //             <ListItemButton onClick={text === 'Starred' ? handleStarredClick : null}>
-            //               <ListItemIcon>
-            //                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            //               </ListItemIcon>
-            //               <ListItemText primary={text} />
-            //             </ListItemButton>
-            //           </ListItem>
-            //         ))}
-            //       </List>
-            //       <Divider />
-            //       <List>
-            //         {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            //           <ListItem key={text} disablePadding>
-            //             <ListItemButton>
-            //               <ListItemIcon>
-            //                 {index % 2 === 0 ? <PortraitSharpIcon /> : <MailIcon />}
-            //               </ListItemIcon>
-            //               <ListItemText primary={text} />
-            //             </ListItemButton>
-            //           </ListItem>
-            //         ))}
-            //       </List>
-            //     </Box>
-            //   );
-            
-            //   return (
-            //     <div>
-            //       <div className={styles.mainBecom}>
-            //         <React.Fragment key="left">
-            //           <Button onClick={toggleDrawer('left', true)}>Our Services</Button>
-            //           <Drawer
-            //             anchor="left"
-            //             open={state.left}
-            //             onClose={toggleDrawer('left', false)}
-            //           >
-            //             {list('left')}
-            //           </Drawer>
-            //         </React.Fragment>
-            //       </div>
-            //       {showForm && (
-            //         <div className={styles.formContainer}>
-            //           <form>
-            //             <div className="mb-3">
-            //               <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-            //               <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-            //               <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-            //             </div>
-            //             <div className="mb-3">
-            //               <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-            //               <input type="password" className="form-control" id="exampleInputPassword1" />
-            //             </div>
-            //             <div className="mb-3 form-check">
-            //               <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-            //               <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-            //             </div>
-            //             <button type="submit" className="btn btn-primary">Submit</button>
-            //           </form>
-            //         </div>
-            //       )}
-            //     </div>
-            //   );
-            // }
-            
-            // export default BecomeNav;
-            

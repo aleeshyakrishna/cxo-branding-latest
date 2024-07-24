@@ -10,8 +10,8 @@ import Footer from '../../Components/Footer/Footer.jsx'
 function Home() {
   return (
     <>
-              <BecomeNav/>
               <Navbar/>
+              <BecomeNav/>
               <Header/>
              
               <Content/>
