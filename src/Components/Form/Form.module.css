@@ -8,8 +8,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     /* background-color: #f4bb44; */
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
+    background-color: black;
     color: #ccc;
+  
 
   }
   

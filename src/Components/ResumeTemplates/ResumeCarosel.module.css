@@ -1,14 +1,16 @@
 .imageResume img{
-    height: 60%;
-    width: 80%;
-    padding-top: 15px;
-    padding-left: 100px;
-    padding-right: 0px;
-    /* align-items: center; */
+    
+    height: 210px;
+    width: 90%;
+
+    padding-left: 27px;
+    /* padding-left: 100px; */
+    /* padding-right: 0px; */
+    
     /* background-color: black; */
 
 }
-/* .CarosalCaptions p,h3{
+ .CarosalCaptions p,h3{
     color: black;
-} */
+} 
 

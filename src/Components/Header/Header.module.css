@@ -1,220 +1,241 @@
-
 .header_main {
-    height: 84vh;
+    height: 100vh;
     width: 100%;
-    background-image: url("./../../Images/coatsoot.webp");
+    background-image: url("./Images/prof6.jpg");
     background-size: cover;
+    background-position: center;
     display: flex;
-   
-    
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.thoughs{
-    width: 10%;
+
+.cxoWord {
+    color: #f4bb40;
+    font-size: 4rem;
+    font-weight: 700;
 }
-.thoughs button{
+
+.thoughs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.thoughs button {
+    margin-bottom: 10px;
     opacity: 0.5;
     height: 50px;
     width: 200px;
     border-radius: 1rem;
     box-sizing: border-box;
     border: none;
- 
+    background-color: black;
+    color: white;
+}
 
+.thoughs button:hover {
+    height: 55px;
+    width: 200px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
 }
 
 .buttonDivsContainer {
-    
-   
-    width: 75%;
-    padding-left: 100px;
+    width: 60%;
+    padding-left: 50px;
     text-align: left;
     box-sizing: border-box;
-    height: 100%;
 }
-.newsSplilts{
-    background-color: black;
-    height: 30%;
-    display: flex;
-}
-.split1{
-    width: 50%;
-    background-color: white;
-}
-.split1 img{
-    height: 164px;
-    width: 456px;
-}
-.split2 img{
-    height: 164px;
-    width: 456px;
-}
-.split2{
-    width: 50%;
-    background-color: yellow;
-}
-.buttonDivsContainer h2{
-    margin-top: 30.7%;
-    color: white;
-    font-size: 4rem; /* Adjust as needed for banner text */
-    font-weight: 500; /* Bold text */
-    border-radius: 1rem;
-    line-height: 1; /* Adjust line height for better readability */
-    letter-spacing: 0.1rem; /* Adjust letter spacing as needed */
-}
-.buttonDivsContainer p{
+
+.buttonDivsContainer h2 {
+    margin-top: 20%;
    
-    color: white;
-    font-size: 2rem; /* Adjust as needed for banner text */
-    font-weight: 200; /* Bold text */
-    border-radius: 1rem;
-    line-height: 1; /* Adjust line height for better readability */
-    letter-spacing: 0.1rem; /* Adjust letter spacing as needed */
+    color: black;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.1rem;
 }
 
+.buttonDivsContainer p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+    margin-bottom: 20px;
+}
 
-.buttonDivsContainer button{
+.buttonDivsContainer button {
     width: 40%;
-    height: 60px;
+    height: 50px;
     border-radius: 1rem;
     background-color: #f4bb40;
     font-size: large;
+    margin-right: 10px;
 }
-.buttonDivsContainer button:hover{
-    background-color: white;
+
+.buttonDivsContainer button:hover {
+    width: 50%;
+    height: 50px;
+    background-color: black;
     opacity: 0.8;
+    color: white;
 }
 
 .header_form_container {
-    /* margin-right: 170px; */
-    width: 25%; 
-    /* height: 10px; */
+    width: 20%;
     color: black;
     justify-content: center;
-    align-items: center; 
-    background-color: white;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
 }
 
-.caroselDiv{
+.caroselDiv {
     background-color: rgba(255, 255, 255, 0);
     height: 100%;
 }
-.splitsNews{
-    height: 240px;
-   
+
+.splitsNews {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0;
 }
-.splitsNews p{
-    padding-left: 50px;
+
+.splitsNews p {
+    /* padding-left: 50px; */
+    color: white;
+}
+.splitsNewsContent{
+    height: 100px;
+    background-color: black;
 }
 
 .header_form_container::-webkit-scrollbar {
     display: none;
-  }
-  .marqueeText {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 10s linear infinite;
-    font-size: 2rem; /* Adjust as needed */
-    font-weight: bold;
-    color: #f4bb40; /* Adjust as needed */
-    padding: 10px 0;
-  }
-
-@media screen and (max-width: 600px) {
-
-    .header_main{
-        background-image: url("./../../Images/job.jpg");
-        height: 100vh;
-        width: 100%;
-        background-color: hsl(0, 0%, 96%);
-        z-index: -3;
-        display: flex;
-        flex-direction: column;
-        background-repeat: no-repeat;
-    }
-
-   
+}
 
 .marqueeText {
     display: inline-block;
     white-space: nowrap;
     animation: marquee 10s linear infinite;
-    font-size: 2rem; /* Adjust as needed */
+    font-size: 2rem;
     font-weight: bold;
-    color: #f4bb40; /* Adjust as needed */
+    color: #f4bb40;
     padding: 10px 0;
-  }
-    .buttonDivs button{
-        color: white;
-        font-size: xx-large;
-        height: 30%;
-        font-weight: bold;
-        border-radius: 5rem;
-        margin-top: 100px;
-        width: 80%;
-        /* gap: 2rem; */
-        opacity: 0.5;
-        box-shadow: black;
-        margin-left: 60px;
-        background-color: black;
-    }
-    
-.buttonDivsContainer{
-    color: white;
-    font-size: xx-large;
-    height: 100%;
-    font-weight: bold;
-    border-radius: 1rem;
-    margin-top: 5.7%;
-    width: 100%;
-    /* gap: 2rem; */
-    opacity: 0.4;
-    /* box-shadow: black; */
-    /* margin-left: 50px; */
-    background-color: black;
-    /* justify-content: space-around; */
 }
+
+.imageResume img {
+    height: 300px;
+    width: 90%;
+    padding-top: 10px;
+    padding-left: 27px;
+}
+
+/* Mobile Query */
+@media screen and (max-width: 600px) {
+    .header_main {
+        background-image: url("./../../Images/job.jpg");
+
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .buttonDivsContainer {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .buttonDivsContainer h2 {
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+
+    .buttonDivsContainer p {
+        font-size: 1rem;
+    }
+
+    .buttonDivsContainer button {
+        width: 80%;
+        font-size: medium;
+    }
+
+    .thoughs {
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .thoughs button {
+        width: 80%;
+    }
+
+    .header_form_container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .splitsNews p {
+        padding-left: 0;
+    }
 }
 
 /* Tablet Query */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .header_box {
-        /* position: absolute; */
-        margin-top: 50%;
-        margin-left: 4%;
-        background-color: var(--black);
-        width: 68%;
-        z-index: 3;
-        height: 20%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        border-radius: 10px;
-        cursor: pointer;
+    .header_main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        height: auto;
     }
 
-    .header_image img {
-        /* position: absolute; */
-        margin-left: -21%;
-        width: 50%;
-        z-index: 1;
-        margin-top: -20%;
-        border-radius: 20px;
+    .buttonDivsContainer {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
     }
 
-    .header_box li {
-        color: #F5F5F5;
-        padding-top: 64px;
-        list-style: none;
-        font-size: 16px;
-        font-family: 'Futura', sans-serif;
-        cursor: pointer;
+    .buttonDivsContainer h2 {
+        margin-top: 20px;
+        font-size: 2.5rem;
     }
 
-    .hrd_icons {
-        cursor: pointer;
-        font-size: 30px;
-        /* position: absolute; */
-        margin-left: 30px;
-        margin-top: -40px;
+    .buttonDivsContainer p {
+        font-size: 1.25rem;
+    }
+
+    .buttonDivsContainer button {
+        width: 70%;
+        font-size: large;
+    }
+
+    .thoughs {
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .thoughs button {
+        width: 70%;
+    }
+
+    .header_form_container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .splitsNews p {
+        padding-left: 0;
     }
 }

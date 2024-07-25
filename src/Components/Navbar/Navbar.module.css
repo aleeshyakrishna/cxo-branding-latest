@@ -1,62 +1,62 @@
 .mainHead {
-    background-color: black;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* gap: 1rem; */
-    color: #f4bb44;
-    position: relative; /* Important for positioning */
-  }
-  
-  .logoContainer {
-    background-color: whitesmoke;
-    height: 70px;
-    width: 70px;
-  }
-  
-  .logo {
-    width: 60px;
-  }
-  
-  .list {
-    list-style: none; /* Remove bullet points */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    transition: left 0.3s ease-in-out; /* Smooth transition */
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f4bb44;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Make sure it appears above other content */
+}
 
-  }
-  
-  .list.active {
-    left: 0;
-  }
-  
-  .list li {
-    cursor: pointer;
-  }
-  
+.logoContainer {
+  background-color: whitesmoke;
+  height: 70px;
+  width: 70px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.list {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  transition: left 0.3s ease-in-out; /* Smooth transition */
+}
+
+.list.active {
+  left: 0;
+}
+
+.list li {
+  cursor: pointer;
+}
+
+.navIcons {
+  font-size: 40px;
+  display: none;
+  z-index: 9999; /* Ensure it appears on top */
+}
+
+@media screen and (max-width: 600px) {
   .navIcons {
-    font-size: 40px;
-    display: none;
-    z-index: 9999; /* Ensure it appears on top */
+    display: block;
   }
-  
-  @media screen and (max-width: 600px) {
-    .navIcons {
-      display: block;
-    }
-  
-    .list {
-        position: absolute;
-      flex-direction: column;
-      height: 100vh;
-      left: -100%; /* Initially hidden off-screen */
-      background-color: white;
-      top: 70px;
-      z-index: 3;
-    }
+
+  .list {
+    position: absolute;
+    flex-direction: column;
+    height: 100vh;
+    left: -100%; /* Initially hidden off-screen */
+    background-color: white;
+    top: 70px;
+    z-index: 3;
   }
-  
+}

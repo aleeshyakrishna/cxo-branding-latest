@@ -5,7 +5,7 @@ const WhoWeAre = () => {
   return (
     <div className={styles.buttonContent}>
       
-      <h1>Who We Are</h1>
+      <h1>WHO WE <span className={styles.cxoWord}>ARE</span></h1>
       <br/><br/>
       <div className={styles.contentMain}>
 

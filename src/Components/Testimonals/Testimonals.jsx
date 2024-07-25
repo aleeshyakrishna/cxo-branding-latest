@@ -2,26 +2,30 @@ import React, { useState, useEffect } from 'react'
 
 import styles from './../Testimonals/Testimonals.module.css'
 
+import Professional1 from "./Images/testimonialMen1.jpg"
+import Professional2 from "./Images/testimonialWomen2.avif"
+import Professional3 from "./Images/testimonialWomen1.avif"
+
 const Testimonals = () => {
     const testimonials = [
         {
             name: 'John Doe',
             title: 'Confidential: Group Head – Marketing & Product Planning | Consumer Durables.',
-            image: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp',
+            image: Professional1,
             quote: '“My experience with Mahesh of CXO Branding has exceeded my very high expectations. I appreciate the attention to detail; the ability to profile my career & compile my past and current career experiences into a wonderful summary & biography. I would highly recommend him to anyone looking for these types of services”.',
             rating: 4,
         },
         {
             name: 'Maria Kate',
             title: ' Confidential: IT Sales & Project Management Professional; Singapore.',
-            image: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp',
+            image: Professional2,
             quote: '“It was a pleasure working with the people at CXO Branding. I am extremely happy with their work. I am sure they will have many success stories in the years ahead!” ',
             rating: 5,
         },
         {
             name: 'Anna Deynah',
             title: 'Confidential: Group CIO with experience in Telecom , Healthcare & Logistics,',
-            image: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp',
+            image: Professional3,
             quote: '“Mahesh’s interactive skills and patience helps in creating individual brand value by probing and restructuring resume in unbelievable way”.',
             rating: 4,
         },

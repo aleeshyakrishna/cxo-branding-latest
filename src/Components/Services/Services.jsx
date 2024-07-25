@@ -9,7 +9,7 @@ const Services = () => {
     return (
 
         <div className={styles.Service}>
-              <h1>Our services</h1>        
+              <h1>OUR <span className={styles.cxoWord}>SERVICES</span></h1>        
             <div className={styles.mainService}>
                 
                 <ServiceCard

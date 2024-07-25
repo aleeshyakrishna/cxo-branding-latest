@@ -1,15 +1,17 @@
 /* Base Styles */
 .buttonContent {
-    background-color: black;
+    background-color: whitesmoke;
     text-align: center;
-    color: white;
+    color: black !important;
     font-size: 30px;
     font-optical-sizing: auto;
     font-style: normal;
 }
-
+.buttonContent h1{
+    padding-top: 30px;
+}
 .contentMain {
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +25,8 @@
 }
 
 .contentMain h1 {
-    color: white;
+    color: black;
+   
 }
 
 .contentProblems img {
@@ -37,9 +40,13 @@
 .contentProblems2 {
     width: 50%;
 }
-
+.cxoWord{
+    color: #f4bb40;
+}
 .contentProblems2 p {
-    color: #878282;
+    /* color: #878282; */
+    color: black        ;
+
 }
 
 .buttonContent button {
