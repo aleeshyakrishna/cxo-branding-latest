@@ -67,7 +67,8 @@ const ResumeWriting = () => {
                 contentLabel="Get Service Form"
                 ariaHideApp={false}
             >
-                <Form apiEndpoint="/resumeService" />
+                <Form />
+                {/* apiEndpoint="/resumeService"  */}
             </Modal>
         </div>
     );

@@ -3,8 +3,8 @@ import styles from './../Form/Form.module.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from "react-toastify";
 import axios from '../../Utils/BaseUrl'; // Make sure you have axios installed
-
-const Form = ({ apiEndpoint }) => {
+// { apiEndpoint }
+const Form = () => {
   console.log(apiEndpoint, "ppp");
   const [formData, setFormData] = useState({
     name: '',
@@ -37,13 +37,13 @@ const Form = ({ apiEndpoint }) => {
     });
 
     try {
-      const response = await axios.post(apiEndpoint, formDataToSend, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
+      // const response = await axios.post(apiEndpoint, formDataToSend, {
+      //   headers: {
+      //     'Content-Type': 'multipart/form-data',
+      //   },
+      // });
       toast.success("Form submitted successfully!");
-      console.log(response.data);
+      // console.log(response.data);
     } catch (error) {
       toast.error("Error submitting form: " + error.message);
       console.error(error);
