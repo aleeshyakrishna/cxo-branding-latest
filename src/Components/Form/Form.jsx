@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import axios from '../../Utils/BaseUrl'; // Make sure you have axios installed
 // { apiEndpoint }
 const Form = () => {
-  console.log(apiEndpoint, "ppp");
+  // console.log(apiEndpoint, "ppp");
   const [formData, setFormData] = useState({
     name: '',
     gender: '',
@@ -27,14 +27,14 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formDataToSend = new FormData();
-    Object.keys(formData).forEach(key => {
-      if (key === 'file') {
-        formDataToSend.append(key, formData[key]); // Append file separately
-      } else {
-        formDataToSend.append(key, formData[key]);
-      }
-    });
+    // const formDataToSend = new FormData();
+    // Object.keys(formData).forEach(key => {
+    //   if (key === 'file') {
+    //     formDataToSend.append(key, formData[key]); // Append file separately
+    //   } else {
+    //     formDataToSend.append(key, formData[key]);
+    //   }
+    // });
 
     try {
       // const response = await axios.post(apiEndpoint, formDataToSend, {
@@ -46,7 +46,7 @@ const Form = () => {
       // console.log(response.data);
     } catch (error) {
       toast.error("Error submitting form: " + error.message);
-      console.error(error);
+      // console.error(error);
     }
   };
 

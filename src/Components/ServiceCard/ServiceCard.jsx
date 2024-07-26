@@ -15,7 +15,7 @@ const Card = ({ icon, title, description,href }) => {
       <p className={styles.card_description}>{description}</p>
       <button onClick={handleClick} className={styles.card_link}>
         EXPLORE →
-      </button>    </div>
+      </button>   </div>
   );
 };
 

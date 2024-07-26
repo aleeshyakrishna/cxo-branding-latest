@@ -68,7 +68,8 @@ const ResumeWriting = () => {
                 ariaHideApp={false}
             >
                 <Form />
-                {/* apiEndpoint="/resumeService"  */}
+                {/* apiEndpoint="/resumeService" */}
+                <button onClick={closeModal} className={styles.closeButton}>Close</button>
             </Modal>
         </div>
     );
