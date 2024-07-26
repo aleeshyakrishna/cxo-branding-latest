@@ -1,0 +1,153 @@
+.main {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    width: 100%;
+}
+.main button {
+    border-radius: 1rem;
+    background-color: #f4bb40;
+    width: 20%;
+}
+.main button:hover {
+    border-radius: 1rem;
+    background-color: black;
+    width: 20%;
+    color: white;
+    opacity: 0.5;
+}
+.secondWord {
+    color: #f4bb40;
+}
+.resumeSamples {
+    margin-top: 100px;
+    width: 40%;
+    height: 450px;
+    border-radius: 8px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column; /* Change the direction to column */
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px; /* Add margin between cards */
+}
+.resumeSamples button {
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    width: 50%;
+    height: 18%;
+    margin-bottom: 20px;
+}
+.resumeSamples button:hover {
+    color: black;
+    background-color: #f4bb40;
+    border-radius: 1rem;
+    width: 58%;
+    height: 19%;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+.sampleHeading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust margin for spacing */
+}
+.mainMain {
+    display: flex;
+    gap: 1rem; /* Add gap between the two cards */
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+.sampleHeading h2 {
+    padding-top: 50px;
+    text-align: center;
+    color: black !important;
+}
+.CarosalResume {
+    width: 80%;
+    height: 80%;
+}
+.CarosalResumeImg img {
+    width: 80%;
+    height: 80%;
+}
+.CarosalResumeImg {
+    width: 80%;
+    height: 80%;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablet version */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main button {
+        width: 60%;
+    }
+    .main button:hover {
+        border-radius: 1rem;
+        background-color: black;
+        width: 70%;
+        height: 10%;
+        color: white;
+        opacity: 0.5;
+    }
+    .resumeSamples {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .mainMain {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile version */
+@media (max-width: 480px) {
+    .main {
+        padding-top: 20px;
+    }
+    .main button {
+        width: 80%;
+    }
+    .main button:hover {
+        border-radius: 1rem;
+        background-color: black;
+        width: 80%;
+        height: 10%;
+        color: white;
+        opacity: 0.5;
+    }
+    .resumeSamples {
+        width: 90%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .resumeSamples button {
+        width: 70%;
+        height: auto;
+    }
+    .mainMain {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sampleHeading h2 {
+        padding-top: 30px;
+    }
+    .CarosalResume,
+    .CarosalResumeImg {
+        width: 100%;
+        height: auto;
+    }
+    .CarosalResumeImg img {
+        width: 100%;
+        height: auto;
+    }
+}

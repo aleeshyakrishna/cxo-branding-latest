@@ -7,9 +7,9 @@ const Footer = () => {
     <div className={styles.footerContainer}>
       <div className={styles.imgDivLogo}>
         <img src={logo} alt="Company Logo" className={styles.logoImg} />
-        <div style={{'font-color':'black'}}>
+        {/* <div style={{'font-color':'black'}}>
                   <marquee  behavior="smooth" direction="right"><p>Become a Mentor</p></marquee>
-        </div>
+        </div> */}
       </div >
       
       <div>

@@ -18,17 +18,9 @@ function BecomeNav() {
   const items = [
     'Business Startup Ideas',
     'Community for CXOs',
-    'Join our Meetup-group',
-    'Become a Freelancer',
-    'Become a Mentor',
-    'Find a Mentor',
-    'Find an Investor',
-    'Become an Investor',
     'Find a cofounder',
-    'Become a Cofounder',
     'CXO magazines',
     'Podcasts for CXOs',
-    'Resume Samples',
     'News Updates Regarding CXO'
   ];
 

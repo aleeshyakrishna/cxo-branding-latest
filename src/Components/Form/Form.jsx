@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import styles from './../Form/Form.module.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from "react-toastify";
+import axios from '../../Utils/BaseUrl'; // Make sure you have axios installed
 
-const Form = () => {
+const Form = ({ apiEndpoint }) => {
+  console.log(apiEndpoint, "ppp");
   const [formData, setFormData] = useState({
     name: '',
     gender: '',
@@ -22,10 +24,30 @@ const Form = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    toast.success("Form saved successfully!");
-    console.log(formData);
+
+    const formDataToSend = new FormData();
+    Object.keys(formData).forEach(key => {
+      if (key === 'file') {
+        formDataToSend.append(key, formData[key]); // Append file separately
+      } else {
+        formDataToSend.append(key, formData[key]);
+      }
+    });
+
+    try {
+      const response = await axios.post(apiEndpoint, formDataToSend, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+      toast.success("Form submitted successfully!");
+      console.log(response.data);
+    } catch (error) {
+      toast.error("Error submitting form: " + error.message);
+      console.error(error);
+    }
   };
 
   return (
@@ -95,7 +117,6 @@ const Form = () => {
             name="complimentaryCall"
             checked={formData.complimentaryCall}
             onChange={handleChange}
-            
           />
           I want a 10-minute complimentary call!
         </label>
