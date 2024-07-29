@@ -1,0 +1,170 @@
+.mainMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.main button {
+    border-radius: 1rem;
+    background-color: #f4bb40;
+    width: 20%;
+    height: 50px;
+}
+
+.main button:hover {
+    border-radius: 1rem;
+    background-color: black;
+    width: 20%;
+    color: white;
+    opacity: 0.5;
+}
+
+.secondWord {
+    color: #f4bb40;
+}
+
+.caption {
+    background-color: white;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.caption p {
+    text-align: center;
+    justify-content: center;
+}
+
+.slider {
+    display: flex;
+    background-color: white;
+    gap: 3rem;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.slideCard img {
+    width: 200px;
+    height: 200px;
+}
+
+.slideCard {
+    background-color: whitesmoke;
+    border-radius: 2rem;
+}
+
+.slideCard h3 {
+    text-align: center;
+}
+
+.getSupport {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.getSupport button {
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    width: 20%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.getSupport button:hover {
+    color: black;
+    background-color: #f4bb40;
+    border-radius: 1rem;
+    width: 25%;
+    height: 50px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+/* Media Queries for Tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main button {
+        width: 50%;
+    }
+
+    .caption p {
+        width: 80%;
+    }
+
+    .slider {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .slideCard {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .slideCard img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .getSupport button {
+        width: 50%;
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-left: 60px;
+    }
+
+    .main button {
+        width: 80%;
+    }
+
+    .caption p {
+        width: 100%;
+    }
+
+    .slider {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .slideCard {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .slideCard img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .getSupport button {
+        width: 80%;
+    }
+    .getSupport button:hover {
+        width: 80%;
+    }
+}

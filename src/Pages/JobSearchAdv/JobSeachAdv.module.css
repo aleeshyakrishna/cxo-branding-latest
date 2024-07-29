@@ -1,0 +1,200 @@
+.first {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 5rem;
+}
+
+.second {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 100px;
+}
+
+.second img {
+    width: 300px;
+    height: 300px;
+}
+
+.main {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+}
+
+.main button {
+    border-radius: 1rem;
+    background-color: #f4bb40;
+    width: 20%;
+    height: 60%;
+}
+
+.main button:hover {
+    border-radius: 1rem;
+    background-color: black;
+    width: 20%;
+    color: white;
+    opacity: 0.5;
+}
+
+.secondWord {
+    color: #f4bb40;
+}
+
+.first img {
+    width: 300px;
+    height: 300px;
+}
+
+.first p {
+    font-size: larger;
+    text-align: left;
+    padding-top: 100px;
+}
+
+.benefits {
+    color: black;
+}
+
+.benefits h2 {
+    font-weight: bold;
+}
+
+.benefits li {
+    list-style: none;
+    text-align: left;
+}
+
+.getSupport button {
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    width: 20%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.getSupport {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.getSupport button:hover {
+    color: black;
+    background-color: #f4bb40;
+    border-radius: 1rem;
+    width: 25%;
+    height: 50px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+/* Media Queries for Tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main button {
+        width: 40%;
+    }
+    .main button:hover {
+        width: 40%;
+    }
+
+    .first {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        background-color: white;
+    }
+
+    .first p {
+        padding-top: 20px;
+        font-size: medium;
+    }
+
+    .first img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .second {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .second img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .getSupport button {
+        width: 40%;
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main button {
+        width: 80%;
+    }
+    .main button:hover {
+        width: 80%;
+    }
+
+    .first {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .first p {
+        padding-top: 20px;
+        font-size: small;
+    }
+
+    .first img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .second {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .second img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .getSupport button {
+        width: 80%;
+    }
+
+    .getSupport button:hover {
+        width: 80%;
+    }
+}

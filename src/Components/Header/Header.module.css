@@ -114,7 +114,19 @@
 }
 .splitsNewsContent{
     height: 100px;
-    background-color: black;
+    /* background-color:  #f4bb40; */
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 1rem;
+
+}
+.splitsNewsContent button{
+    width: 90%;
+    height: 50px;
+    border-radius: 1rem;
+    background-color: #f4bb40;
+    font-size: large;
+    /* margin-right: 10px; */
 }
 
 .header_form_container::-webkit-scrollbar {

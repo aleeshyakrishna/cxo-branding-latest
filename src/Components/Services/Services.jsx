@@ -28,7 +28,7 @@ const Services = () => {
                  <ServiceCard
                     icon={personalBrading}
                     title="Personal Branding"
-                    href="/services/personalBrading"
+                    href="/services/personalBranding"
 
                     description="Your pesonal brand is very vital to you professionally. It is how you present yourself to potential employers. We provide you with solutions to ensure that employers see you in the way you want them to!"
                 />

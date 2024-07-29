@@ -86,7 +86,7 @@ function Navbar() {
         <li >About Us</li>
         <li onClick={() => navigate('/contact')}>Contact</li>
         <li >Career</li>
-        <li >Signup</li>
+        <li onClick={()=>navigate('/user/register')}>Signup</li>
       </ul>
       <div className={styles.navIcons} onClick={handleClick}>
         {open ? <MdClose /> : <TiThMenuOutline />}

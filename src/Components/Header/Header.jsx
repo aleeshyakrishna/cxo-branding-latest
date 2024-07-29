@@ -2,20 +2,22 @@ import React, { useState } from "react";
 import styles from "./Header.module.css";
 import Stepper from "../Steppers/Steppers.jsx";
 import Profesional from "../../assets/Animations/Profesional.json";
-import Prof from "./Images/prof.jpg";
 import Lottie from 'react-lottie';
 import ResumeCarosel from "../ResumeTemplates/ResumeCarosel.jsx";
-import Resume2 from '../../Images/prof1.webp';
-import Resume3 from '../../Images/prof2.webp';
 import Form from "../Form/Form.jsx";
-import { color } from "@mui/system";
 import Modal from 'react-modal';
+import { InlineWidget } from "react-calendly";
+import { AiOutlineCloseCircle } from 'react-icons/ai'; // Import close icon
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
+  const [showCalendly, setShowCalendly] = useState(false);
 
   const handleOpenModal = () => setOpenModal(true);
   const handleCloseModal = () => setOpenModal(false);
+
+  const handleOpenCalendly = () => setShowCalendly(true);
+  const handleCloseCalendly = () => setShowCalendly(false);
 
   const customStyles = {
     content: {
@@ -25,7 +27,7 @@ const Header = () => {
       bottom: 'auto',
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
-      width: '400px',
+      width: '80%',
       padding: '20px',
       backgroundColor: '#fff',
       borderRadius: '8px',
@@ -83,15 +85,26 @@ const Header = () => {
         <div className={styles.caroselDiv}>
           <ResumeCarosel />
           <hr />
-          <div className={styles.splitsNews}>
-            <p>Pricing</p>
-            <p>About Us</p>
-          </div>
           <div className={styles.splitsNewsContent}>
-            <p>jhjfvujvujvujvujfvujfv</p>
+            <button onClick={handleOpenCalendly}>Schedule A Free Call</button>
           </div>
         </div>
       </div>
+      <Modal
+        isOpen={showCalendly}
+        onRequestClose={handleCloseCalendly}
+        style={customStyles}
+        contentLabel="Schedule a Call"
+        ariaHideApp={false}
+      >
+        <span className={styles.closeButton} onClick={handleCloseCalendly}>
+          <AiOutlineCloseCircle />
+        </span>
+        <InlineWidget
+          url="https://calendly.com/teammentoons/active-listeners"
+          styles={{ width: '100%', height: '500px' }}
+        />
+      </Modal>
     </div>
   );
 };
