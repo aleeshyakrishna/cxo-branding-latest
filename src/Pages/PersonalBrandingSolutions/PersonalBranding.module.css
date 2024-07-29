@@ -139,6 +139,12 @@
     .main button {
         width: 80%;
     }
+    .main button:hover {
+        border-radius: 1rem;
+        background-color: #f4bb40;
+        width: 80%;
+        height: 50px;
+    }
 
     .caption p {
         width: 100%;
