@@ -46,17 +46,76 @@
 }
 
 @media screen and (max-width: 600px) {
-  .navIcons {
-    display: block;
-  }
+/* Navbar.module.css */
 
-  .list {
-    position: absolute;
-    flex-direction: column;
-    height: 100vh;
-    left: -100%; /* Initially hidden off-screen */
-    background-color: white;
-    top: 70px;
-    z-index: 3;
-  }
+.navIcons {
+  display: none;
+  /* Ensure it's hidden on larger screens by default */
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px; /* Adjust according to your design */
+  left: -100%; /* Hidden off-screen by default */
+  width: 100%;
+  height: 100vh;
+  background-color: black; /* Dark background for contrast */
+  transition: left 0.3s ease;
+  z-index: 10;
+}
+
+.list.active {
+  left: 0; /* Show when active */
+}
+
+.list li {
+  border-bottom: 1px solid #444; /* Subtle separator between items */
+}
+
+.list li:hover {
+  background-color: black; /* Highlight on hover */
+}
+
+.list li a {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.list li a:hover {
+  background-color: #444; /* Slightly different color on hover */
+}
+
+.navIcons {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 20; /* Ensure it’s above other elements */
+  cursor: pointer;
+}
+
+.navIcons svg {
+  color: white;
+  font-size: 24px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #f4bb40; /* Highlight close button */
+}
+
+.closeButton:hover {
+  color: #fff;
+}
+
 }

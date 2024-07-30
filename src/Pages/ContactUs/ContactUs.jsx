@@ -1,8 +1,11 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import styles from './ContactUs.module.css';
 import Navbar from '../../Components/Navbar/Navbar';
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  }, []);
   return (
     <>
       <Navbar />
