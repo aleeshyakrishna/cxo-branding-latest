@@ -90,6 +90,12 @@
     margin-bottom: 20px;
     opacity: 0.5;
 }
+.closeButton{
+    /* border-radius: 1rem; */
+    background-color: black;
+    width: 10%;
+    color: white;
+}
 
 /* Media Queries for Tablets */
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -135,7 +141,12 @@
         justify-content: center;
         padding-left: 60px;
     }
-
+    .closeButton{
+        /* border-radius: 1rem; */
+        background-color: black;
+        width: 10%;
+        color: white;
+    }
     .main button {
         width: 80%;
     }

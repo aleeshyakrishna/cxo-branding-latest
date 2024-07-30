@@ -15,7 +15,7 @@ function Home() {
               <Header/>
              
               <Content/>
-              <Services/>
+              <Services />
               <WhoWeAre/>
               
               <Testimonals/>

@@ -4,17 +4,23 @@ import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import Modal from 'react-modal';
 import { InlineWidget } from "react-calendly";
+import Form from '../../Components/Form/Form'; // Import the Form component
+import SocialMediaForm from '../../Components/SocialMediaForm/SocialMediaForm';
 import { AiOutlineCloseCircle } from 'react-icons/ai'; // Import close icon
 
 const SocialProfile = () => {
-  const [openModal, setOpenModal] = useState(false);
+  const [isCalendlyModalOpen, setIsCalendlyModalOpen] = useState(false);
+  const [isFormModalOpen, setIsFormModalOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top of the page
   }, []);
 
-  const handleOpenModal = () => setOpenModal(true);
-  const handleCloseModal = () => setOpenModal(false);
+  const handleOpenCalendlyModal = () => setIsCalendlyModalOpen(true);
+  const handleCloseCalendlyModal = () => setIsCalendlyModalOpen(false);
+
+  const handleOpenFormModal = () => setIsFormModalOpen(true);
+  const handleCloseFormModal = () => setIsFormModalOpen(false);
 
   const customStyles = {
     content: {
@@ -26,7 +32,7 @@ const SocialProfile = () => {
       transform: 'translate(-50%, -50%)',
       width: '80%',
       padding: '20px',
-      backgroundColor: '#fff',
+      backgroundColor: 'transparent',
       borderRadius: '8px',
       boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
       zIndex: '1000',
@@ -43,7 +49,7 @@ const SocialProfile = () => {
         <Navbar />
         <div className={styles.main}>
           <h1>Social Profile <br /><span className={styles.secondWord}>Management</span></h1>
-          <button className={styles.scheduleCalendly} onClick={handleOpenModal}>Schedule a call</button>
+          <button className={styles.scheduleCalendly} onClick={handleOpenCalendlyModal}>Schedule a call</button>
         </div>
 
         <div className={styles.caption}>
@@ -82,26 +88,41 @@ const SocialProfile = () => {
           </div>
         </div>
         <div className={styles.getSupport}>
-          <button>Get Support</button>
+          <button onClick={handleOpenFormModal}>Get Support</button>
         </div>
       </div>
       <br />
       <Footer />
 
       <Modal
-        isOpen={openModal}
-        onRequestClose={handleCloseModal}
+        isOpen={isCalendlyModalOpen}
+        onRequestClose={handleCloseCalendlyModal}
         style={customStyles}
         contentLabel="Schedule a Call"
         ariaHideApp={false}
       >
-        <span className={styles.closeButton} onClick={handleCloseModal}>
+        <span className={styles.closeButton} onClick={handleCloseCalendlyModal}>
           <AiOutlineCloseCircle />
         </span>
         <InlineWidget
           url="https://calendly.com/teammentoons/active-listeners"
           styles={{ width: '100%', height: '500px' }}
         />
+      </Modal>
+
+      <Modal
+        isOpen={isFormModalOpen}
+        onRequestClose={handleCloseFormModal}
+        style={customStyles}
+        contentLabel="Get Support Form"
+        ariaHideApp={false}
+      >
+        <span className={styles.closeButton} onClick={handleCloseFormModal}>
+          <AiOutlineCloseCircle />
+        </span>
+        <SocialMediaForm />
+        {/* <button onClick={closeModal} className={styles.closeButton}>Close</button> */}
+
       </Modal>
     </div>
   );

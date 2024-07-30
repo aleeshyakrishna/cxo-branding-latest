@@ -1,7 +1,110 @@
-.MainContentContactUs{
-    /* background-color: black; */
-    height: 100vh;
-    color: white;
+.contactUsContainer {
+    background: url('./Images/wp3287717.webp') no-repeat center center/cover;
+    padding: 50px;
     text-align: center;
-    /* margin-top: 50%; */
-}
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86.2vh;
+    gap: 3rem;
+  }
+  
+  .first {
+    width: 50%;
+    height: 86%;
+    text-align: left;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background: rgb(255, 251, 251);
+    border-radius: 10px;
+    opacity: 0.5;
+    
+  }
+
+  .first p{
+    
+    /* margin-bottom: 20px; */
+    color:black;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  
+  .title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color:black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .contactInfo {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+   
+  }
+  
+  .contactForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background: rgba(248, 246, 246, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .inputField, .textareaField {
+    width: 100%;
+    /* max-width: 600px; */
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* .textareaField {
+    height: 150px;
+    resize: none;
+    width: 100%;
+  } */
+  
+  .submitButton {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4bb40;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: white;
+    color: #f4bb40;
+    border: 2px solid #f4bb40;
+  }
+  
+  @media (max-width: 768px) {
+    .contactUsContainer {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .first, .contactForm {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  

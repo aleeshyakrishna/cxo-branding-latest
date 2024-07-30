@@ -33,12 +33,14 @@ const ResumeWriting = () => {
       transform: 'translate(-50%, -50%)',
       width: '80%',
       padding: '20px',
-      backgroundColor: '#fff',
+      backgroundColor: 'transparent',
       borderRadius: '8px',
       boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+      // zIndex:'9999'
     },
     overlay: {
       backgroundColor: 'rgba(0, 0, 0, 0.75)',
+      zIndex: '999',
     },
   };
 

@@ -8,18 +8,27 @@ import SlideImg3 from "./Images/video-resumes.png";
 import SlideImg4 from "./Images/video-testimonials.png";
 import SlideImg5 from "./Images/youtube.png";
 import Modal from 'react-modal';
+import Form from '../../Components/Form/Form';
 import { InlineWidget } from "react-calendly";
 import { AiOutlineCloseCircle } from 'react-icons/ai'; // Import close icon
 
 const PersonalBranding = () => {
-  const [openModal, setOpenModal] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top of the page
   }, []);
 
-  const handleOpenModal = () => setOpenModal(true);
-  const handleCloseModal = () => setOpenModal(false);
+  const openModal = (content) => {
+    setModalContent(content);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalContent(null);
+  };
 
   const customStyles = {
     content: {
@@ -31,7 +40,7 @@ const PersonalBranding = () => {
       transform: 'translate(-50%, -50%)',
       width: '80%',
       padding: '20px',
-      backgroundColor: '#fff',
+      backgroundColor: 'transparent',
       borderRadius: '8px',
       boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
       zIndex: '1000',
@@ -48,7 +57,7 @@ const PersonalBranding = () => {
         <Navbar />
         <div className={styles.main}>
           <h1>Personal Branding <br /><span className={styles.secondWord}>Solution</span></h1>
-          <button className={styles.scheduleCalendly} onClick={handleOpenModal}>Schedule a call</button>
+          <button className={styles.scheduleCalendly} onClick={() => openModal('calendly')}>Schedule a call</button>
         </div>
         <div className={styles.caption}>
           <p>Your personal brand is very vital to you professionally. <br />
@@ -78,19 +87,29 @@ const PersonalBranding = () => {
           </div>
         </div>
         <div className={styles.getSupport}>
-          <button>Get Support</button>
+          <button onClick={() => openModal('form')}>Get Support</button>
         </div>
       </div>
       <Footer />
+      <Modal
+        isOpen={isModalOpen && modalContent === 'form'}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Get Service Form"
+        ariaHideApp={false}
+      >
+        <Form />
+        <button onClick={closeModal} className={styles.closeButton}>Close</button>
+      </Modal>
 
       <Modal
-        isOpen={openModal}
-        onRequestClose={handleCloseModal}
+        isOpen={isModalOpen && modalContent === 'calendly'}
+        onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Schedule a Call"
         ariaHideApp={false}
       >
-        <span className={styles.closeButton} onClick={handleCloseModal}>
+        <span className={styles.closeButton} onClick={closeModal}>
           <AiOutlineCloseCircle />
         </span>
         <InlineWidget

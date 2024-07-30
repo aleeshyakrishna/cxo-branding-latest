@@ -8,6 +8,7 @@ import Form from "../Form/Form.jsx";
 import Modal from 'react-modal';
 import { InlineWidget } from "react-calendly";
 import { AiOutlineCloseCircle } from 'react-icons/ai'; // Import close icon
+import { border } from "@mui/system";
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -29,10 +30,10 @@ const Header = () => {
       transform: 'translate(-50%, -50%)',
       width: '80%',
       padding: '20px',
-      backgroundColor: '#fff',
+      backgroundColor: 'transparent',
       borderRadius: '8px',
       boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
-      zIndex: '1000',
+      zIndex:'1000'
     },
     overlay: {
       backgroundColor: 'rgba(0, 0, 0, 0.75)',
@@ -61,12 +62,12 @@ const Header = () => {
       </div>
       <div className={styles.thoughs}>
         <button onClick={handleOpenModal}>Become a Mentor</button>
-        <button>Become a Freelancer</button>
-        <button>Find a Cofounder</button>
-        <button>Find an Investor</button>
-        <button>Find a Mentor</button>
-        <button>Become an Investor</button>
-        <button>Join Our Meetup Group</button>
+        <button onClick={handleOpenModal}>Become a Freelancer</button>
+        <button onClick={handleOpenModal}>Find a Cofounder</button>
+        <button onClick={handleOpenModal}>Find an Investor</button>
+        <button onClick={handleOpenModal}>Find a Mentor</button>
+        <button onClick={handleOpenModal}>Become an Investor</button>
+        <button onClick={handleOpenModal}>Join Our Meetup Group</button>
       </div>
       <Modal
         isOpen={openModal}

@@ -8,7 +8,7 @@ import PersonalBranding from '../Pages/PersonalBrandingSolutions/PersonalBrandin
 import SocialProfile from '../Pages/SocialProfileManagement/SocialProfile.jsx';
 import Signup from '../Pages/Signup/Signup.jsx';
 import Login from '../Pages/Login/Login.jsx';
-
+import AboutUs from '../Pages/AboutUs/AboutUs.jsx';
 const AllRoutes = () => {
   return (
     <Router>
@@ -35,6 +35,9 @@ const AllRoutes = () => {
         </Routes>
         <Routes>
           <Route path='/user/login' element={<Login/>} />
+        </Routes>
+        <Routes>
+          <Route path='/aboutUs' element={<AboutUs/>} />
         </Routes>
     </Router>
   )

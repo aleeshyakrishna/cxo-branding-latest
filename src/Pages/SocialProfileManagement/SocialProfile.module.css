@@ -12,6 +12,12 @@
     background-color: whitesmoke;
     width: 100%;
 }
+.closeButton{
+    /* border-radius: 1rem; */
+    background-color: black;
+    width: 100%;
+    color: rgb(212, 17, 17);
+}
 
 .main button {
     border-radius: 1rem;
